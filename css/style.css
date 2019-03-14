@@ -1,31 +1,50 @@
 * {box-sizing:border-box}
-ul {
-  padding: 20px;
-}
 
-div.logo-container {
-top: 0%;
-bottom: 33.77%;
-padding-left: 70px;
-}
+
+
 
 body {
-  padding-top: 56px;
   width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+.container{
+	margin: 0 auto;
+	width: 70%;
+	padding-top: 30px;
+}
+
+.logo-container {
+top: 0%;
+bottom: 33.77%;
+float: left;
 }
 
 
-ul.flex-container {
+.flex-container {
 font-family: Roboto;
 font-style: normal;
 font-weight: 300;
 line-height: normal;
 font-size: 24px;
 text-align: center;
-
 color: #262626;
-
+float: right;
 }
+
+.navigation{
+	float: left;
+	padding: 10px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+
 h1 {
 font-family: Circular Std;
 font-style: normal;
@@ -34,14 +53,12 @@ line-height: normal;
 font-size: 48px;
 text-align: left;
 color: #262626;
-padding-left: 100px;
+clear: both;
 }
 
-main {
-  padding-left: 100px;
-}
+
 h4 {
-padding-left: 100px;
+
 font-family: Roboto;
 font-style: normal;
 font-weight: 300;
@@ -51,32 +68,33 @@ color: #262626;
 
 }
 
-h5 {
+img.rubiks {
+float: right;
+}
+
+.iDesign, .iUse{
   font-family: Roboto;
 font-style: normal;
 font-weight: 300;
 font-size: 24px;
 color: #262626;
+margin: 0px;
+padding-top: 200px;
+padding-bottom:200px;
 }
 
-img.rubiks {
-  position: absolute;
-width: 329px;
-height: 349px;
-left: 859px;
-top: 356px;
-}
+
+
+
 
 ul {
   list-style: none;
 }
 
 img.cloudy {
-  align-content: center;
-
+  padding-top: 100px;
 
 }
-
 h1.name1 {
 
 font-family: Circular Std;
@@ -85,14 +103,16 @@ font-weight: normal;
 line-height: normal;
 font-size: 48px;
 text-align: center;
-
 color: #262626;
 }
 
-a.view {
+.caseStudyBtn{
+	width: 25%;
+	margin: 0 auto;
+}
+button{
 width: 235px;
 height: 36px;
-
 color: white;
 font-family: Roboto;
 font-style: normal;
