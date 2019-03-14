@@ -1,0 +1,107 @@
+* {box-sizing:border-box}
+ul {
+  padding: 20px;
+}
+
+div.logo-container {
+top: 0%;
+bottom: 33.77%;
+padding-left: 70px;
+}
+
+body {
+  padding-top: 56px;
+  width: 100%;
+}
+
+
+ul.flex-container {
+font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+font-size: 24px;
+text-align: center;
+
+color: #262626;
+
+}
+h1 {
+font-family: Circular Std;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 48px;
+text-align: left;
+color: #262626;
+padding-left: 100px;
+}
+
+main {
+  padding-left: 100px;
+}
+h4 {
+padding-left: 100px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+font-size: 24px;
+color: #262626;
+
+}
+
+h5 {
+  font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+color: #262626;
+}
+
+img.rubiks {
+  position: absolute;
+width: 329px;
+height: 349px;
+left: 859px;
+top: 356px;
+}
+
+ul {
+  list-style: none;
+}
+
+img.cloudy {
+  align-content: center;
+
+
+}
+
+h1.name1 {
+
+font-family: Circular Std;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 48px;
+text-align: center;
+
+color: #262626;
+}
+
+a.view {
+width: 235px;
+height: 36px;
+
+color: white;
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+font-size: 14px;
+text-align: center;
+background: #F76919;
+background-size: contain;
+box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 2px rgba(0, 0, 0, 0.12);
+border-radius: 2px;
+}

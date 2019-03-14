@@ -1,0 +1,29 @@
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items:center;
+}
+
+nav ul li a {
+  color:black;
+  text-decoration: none;
+  display: flex;
+  border-bottom: none;
+}
+
+
+nav div img {
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+}
+
+
+
+li {
+  padding: 6px;
+}

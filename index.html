@@ -4,20 +4,25 @@
    <title>Portfolio | Orlee Gillis</title>
    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="styles/main.css">
- </head>
+   <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="css/flex.css">
+  </head>
  <body>
 
-<header role="banner">
 
-<nav>
-  <img src="images/main-logo.png" class="logo" alt="og logo">
-<ol>Work</ol>
-<ol>Writing</ol>
-<ol>About</ol>
-<ol>Contact<ol>
-</nav>
-  </header>
+  <nav>
+    <div class="logo-container">
+      <img src="images/main-logo.png" class="logo" alt="og logo">
+    </div>
+
+    <ul class="flex-container">
+  <li><a href="#">Work</a></li>
+  <li><a href="#">Writing</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Contact</a></li>
+      </ul>
+  </nav>
   <h1>I’m a UX Designer based in Tel Aviv.</h1>
   <h4>I bring clarity to complex user stories.</h4>
 
@@ -30,11 +35,12 @@
  <li>
              <img src="images/cloudyMockup.png" class= "cloudy" alt="cloudy mockup"/>
 
-             <h1 class="name">cloudy</h1>
-<button>VIEW CASE STUDY</button>
+             <h1 class="name1">cloudy</h1>
+<a class="view">VIEW CASE STUDY</a>
 </li>
+<!--
 <li>
-  <img src="images/clearTalk.png" alt="clearTalk">
+  <img src="images/clearTalk.png" class ="clearTalk" alt="clearTalk">
 <h1>ClearTalk</h1>
 <button>VIEW CASE STUDY</button>
 </li>
@@ -50,7 +56,10 @@
 <h1>OrderIt</h1>
 <button>VIEW CASE STUDY</button>
 </li>
-       </ul>
+</ul>
+
+-->
+
     <p>I use...</p>
     <img src="images/mytools.png" alt="myTools">
   </main>
