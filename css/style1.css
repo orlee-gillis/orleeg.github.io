@@ -1,0 +1,48 @@
+* {box-sizing:border-box}
+
+
+body {
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+.container{
+	margin: 0 auto;
+	padding-top: 30px;
+	width: 70%;
+}
+
+.logo-container {
+top: 0%;
+bottom: 33.77%;
+float: left;
+}
+
+
+.flex-container {
+font-family: Roboto;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+font-size: 24px;
+text-align: center;
+color: #262626;
+float: right;
+flex-direction: row;
+list-style: none;
+display: inline;
+}
+
+
+.navigation{
+	float: left;
+	padding: 10px;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+.menu-container {
+  display:flex;
+  width: 70%;
+}
