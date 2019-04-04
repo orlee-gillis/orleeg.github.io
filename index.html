@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
  <head>
    <title>Portfolio | Orlee Gillis</title>
    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-<link href="https://fonts.googleapis.com/css?family= Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
   </head>
  <body>
-<section class="container">
+<div class="container">
 
   <nav>
     <div class="logo-container">
@@ -16,10 +16,10 @@
     </div>
 
     <ul class="flex-container">
-  <li class="navigation"><a href="#">Work</a></li>
-  <li class="navigation"><a href="#">Writing</a></li>
-  <li class="navigation"><a href="#">About</a></li>
-  <li class="navigation"><a href="#">Contact</a></li>
+      <li class="navigation"><a href="#">Work</a></li>
+      <li class="navigation"><a href="#">Writing</a></li>
+      <li class="navigation"><a href="#">About</a></li>
+      <li class="navigation"><a href="#">Contact</a></li>
       </ul>
   </nav>
   <h1>I’m a UX Designer based in Tel Aviv.</h1>
@@ -35,13 +35,11 @@
 
 <h2 class="name1">cloudy</h2>
 <div class="caseStudyBtn">
-<a>
-  <button class="caseStudyBtn">VIEW CASE STUDY</button>
-</a>
+  <button onclick='window.location.href = "http://google.com"' class="caseStudyBtn">VIEW CASE STUDY</button>
 </div>
 </div>
 	<!--end of indented section-->
-</section>
+</div>
 
 <div class="wrap">
 	<div class="green">
@@ -50,9 +48,7 @@
 	<div class="title-column-right">
  		 <h2 class="name2">ClearTalk</h2>
 		<div class="caseStudyBtn2">
-			<a>
-        <button class="caseStudyBtn">VIEW CASE STUDY</button>
-      </a>
+                 <button onclick='window.location.href = "http://google.com"' class="caseStudyBtn">VIEW CASE STUDY</button>
 		</div>
 	</div>
 </div>
@@ -61,16 +57,13 @@
 <div class="wrap">
 	<div class="title-column-left">
   		<h2 class="name3">GoodEats</h2>
-		<div class="caseStudybtn3">
-			<a>
-        <button class="caseStudyBtn">VIEW CASE STUDY</button>
-      </a>
+		<div class="caseStudybtn3"></div>
+        <button onclick='window.location.href = "http://google.com"' class="caseStudyBtn">VIEW CASE STUDY</button>
 		</div>
 	</div>
 	<div class="yellow">
 		<img src="images/goodEats.png" class= "goodEats" alt="goodEats">
 	</div>
-</div>
 
 <div class="wrap">
 	<div class="blue">
@@ -79,9 +72,9 @@
 	<div class="title-column-right-bottom">
       <h2>OrderIt</h2>
       <div class="caseStudybtn4">
-        <a>
-          <button class="caseStudyBtn">VIEW CASE STUDY</button>
-        </a>
+          <button 
+                  onclick='window.location.href = "http://google.com"'
+                  class="caseStudyBtn">VIEW CASE STUDY</button>
       </div>
     </div>
 </div>
@@ -91,23 +84,20 @@
 <div class="container">
 
     <h4 class = "i-use-text">I use...</h4>
-    <div class="tool-icons">
-    <img src="images/mytools.png" alt="myTools">
-  </div>
+    <img src="images/mytools.png" alt="myTools" class="mytools">
   </div>
 </div>
-      <footer class="flex-container">
+<footer class="flex-container">
         <div class="my-name">
         <p>© Orlee Gillis 2018. All Rights Reserved.</p>
         </div>
-        <div>
+        <div class="bottom-nav">
         <ul class="flex-container">
-        <li class="nav-item"><a href="#">Work</a></li>
-        <li class="nav-item"><a href="#">Writing</a></li>
-        <li class="nav-item"><a href="#">About</a></li>
-        <li class="nav-item"><a href="#">Contact</a></li>
-      </ul>
+            <li class="nav-item"><a href="#">Work</a></li>
+            <li class="nav-item"><a href="#">Writing</a></li>
+            <li class="nav-item"><a href="#">About</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>
+          </ul>
     </div>
 </footer>
- </body>
-</html>
+ </body></html>
