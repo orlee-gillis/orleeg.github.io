@@ -13,6 +13,10 @@ body {
 	width: 70%;
 }
 
+h1, h2 {
+    font-family: Roboto;
+}
+
 .logo-container {
 top: 0%;
 bottom: 33.77%;
@@ -42,7 +46,4 @@ display: inline;
 
 }
 
-.menu-container {
-  display:flex;
-  
-}
+

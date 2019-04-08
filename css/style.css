@@ -12,7 +12,7 @@ body {
 .container{
 	margin: 0 auto;
 	padding-top: 30px;
-	width: 70%;
+	width: 80%;
   padding-bottom: 30px;
 }
 
@@ -50,8 +50,8 @@ a{
 }
 
 
-h1 {
-font-family: 'Patrick Hand SC', cursive;
+h1.homepage {
+font-family: Roboto;
 font-style: normal;
 font-weight: normal;
 line-height: normal;
@@ -115,13 +115,24 @@ img.cloudy {
 	Height: 500px;
 	background-size: cover;
 }
-h2 {
 
-font-family: 'Patrick Hand SC', cursive;
+
+h2 {
+    font-family: Roboto;
 font-style: normal;
 font-weight: normal;
 line-height: normal;
-font-size: 48px;
+font-size: 36px;
+text-align: center;
+color: #262626;
+}
+ h3 {
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 32px;
 text-align: center;
 color: #262626;
 
@@ -302,4 +313,64 @@ div.my-name {
   padding-left: 10px;
   padding-right: 10px;
   font-size: 16px;
+}
+
+/*This section begins project1.html*/
+
+img.mockups {
+    width: 65%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+}
+
+.project-overview {
+    align-items: center
+}
+
+h1.project {
+font-family: nunito;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: normal;
+}
+
+p.section-description {
+font-family: Roboto;
+font-style: normal;
+font-weight: 100;
+font-size: 16px;
+line-height: 27px;
+letter-spacing: 0.5px;    
+    
+}
+
+h2.section-subtitle {
+    font-size: 28px;
+    text-align: left;
+    font-family: nunito;
+}
+
+h4.project-page {
+    font-size: 22px;
+}
+/* Create two equal columns that floats next to each other */
+
+div.grid {
+    padding-left:70px;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+ text-align:center;    
 }
