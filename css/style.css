@@ -405,7 +405,6 @@ h4.column-swot {
 ul.flex-container  {
     float:left;
      font-size: 16px;
-     width:25%;
      display: block;
   margin-top: 1em;
   margin-bottom: 1 em;
@@ -447,17 +446,16 @@ clear: both;
 flex-direction:row;
 padding-left:15%;
 text-align:left;
-}
+} 
 
 div.flex-container > ul.flex-container {
-padding-right:5%;
 padding-top:1%;
 width:40%;
+margin-left:0;
 }
 
 div.quotes {
-padding-top:5%;
-padding-left:25%;
 line-height:27px;
+padding-left:5%;
 
 }
