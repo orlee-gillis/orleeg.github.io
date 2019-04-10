@@ -441,20 +441,23 @@ padding-left:50%;
 padding-top:3%;
 }
 
-.user-surveys > ul.flex-container {
-display: inline-block;
-text-align: left;
+div.flex-container {
+display: flex;
 clear: both;
-width:33.3%;
+flex-direction:row;
+padding-left:15%;
+text-align:left;
 }
 
-img.drive {
-width:20%;
+div.flex-container > ul.flex-container {
+padding-right:5%;
+padding-top:1%;
+width:40%;
 }
 
-img.dropbox {
-width:20%;
-}
+div.quotes {
+padding-top:5%;
+padding-left:25%;
+line-height:27px;
 
-img.slack {
-width:20%;}
+}
