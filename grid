@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Case Study | cloudy by Orlee Gillis</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+</head>
+ <body>
+ <div class="grid">
+    <div class="row">
+      <div class="column">
+        <h4 class="project-page"> class="section-subtitle">Strengths</h4>
+        <ul>
+            <li>Consistent branding, color scheme, overall look and feel</li>
+            <li>Features are titled very well and consistently</li> 
+            <li>Synchronizes well with Google Calendar</li>
+        </ul>
+        </div>
+    <div class="column">
+        <h4 class="project-page">Weaknesses<h2 class="section-subtitle"></h4>
+        <ul>
+            <li>Confusing, fragmented user flow</li>
+            <li>Action items not positioned logically</li>
+            <li>Inconsistent, unconvential editing menus</li>
+        </ul>
+    </div>
+      <div class="column">
+        <h4 class="project-page">Opportunities</h4>
+        <ul>
+            <li>Revamp UI and UX
+            <li>Demonstrate potential use-cases</li>
+            <li>Increase real-time collaboration opportunities/features</li>
+            <li>Improve the basic free package</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h4 class="project-page">Threats</h4>
+        <ul>
+            <li>Not an obviously defined target user</li>
+<li>Basic/Free package has few features</li>
+            <li>Poor UI/UX</li>
+        </ul>
+      </div>
+            </div>
+        </div>
+ 
+ </body>
+ </html>
+ 

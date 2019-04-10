@@ -31,7 +31,7 @@ line-height: normal;
 font-size: 24px;
 text-align: center;
 color: #262626;
-float: right;
+float: left;
 flex-direction: row;
 list-style: none;
 display: inline;
@@ -335,22 +335,32 @@ font-style: normal;
 font-weight: normal;
 font-size: 36px;
 line-height: normal;
+width:100%;
+display: inline-block;
 }
 
-p.section-description {
+p.project-description {
 font-family: Roboto;
 font-style: normal;
 font-weight: 100;
 font-size: 16px;
 line-height: 27px;
-letter-spacing: 0.5px;    
-    
+letter-spacing: 0.5px;
 }
 
 h2.section-subtitle {
     font-size: 28px;
     text-align: left;
     font-family: nunito;
+}
+
+p.section-description {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.5px;
 }
 
 h4.project-page {
@@ -361,16 +371,90 @@ h4.project-page {
 div.grid {
     padding-left:70px;
 }
+
+.row:after {
+    display: table;
+  clear: both;
+    content: "";
+}
 .column {
-  float: left;
+ float: left;
   width: 50%;
   padding: 10px;
 }
 
 /* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
- text-align:center;    
+
+.column-swot {
+    float:left;
+    width:25%;
 }
+
+
+h4.column-swot {
+    width:25%;
+    clear:both;
+}
+
+.swot {
+    display:inline-block;
+    text-align: left;
+    clear:both;
+}
+
+ul.flex-container  {
+    float:left;
+     font-size: 16px;
+     width:25%;
+     display: block;
+  margin-top: 1em;
+  margin-bottom: 1 em;
+  margin-left: 0;
+  margin-right: 0;
+  vertical-align:left;
+}
+
+li.swot-list-item  {
+     font-family: Roboto;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+p.section-description-container {
+width:100%;
+display: block;
+margin-top:0;
+}
+
+li.survey-findings {
+font-family: Roboto;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+.view-button {
+padding-left:50%;
+padding-top:3%;
+}
+
+.user-surveys > ul.flex-container {
+display: inline-block;
+text-align: left;
+clear: both;
+width:33.3%;
+}
+
+img.drive {
+width:20%;
+}
+
+img.dropbox {
+width:20%;
+}
+
+img.slack {
+width:20%;}
