@@ -23,7 +23,7 @@ float: left;
 }
 
 
-.flex-container {
+ul.flex-container {
 font-family: Roboto;
 font-style: normal;
 font-weight: 300;
@@ -31,7 +31,7 @@ line-height: normal;
 font-size: 24px;
 text-align: center;
 color: #262626;
-float: left;
+float: right;
 flex-direction: row;
 list-style: none;
 display: inline;
@@ -318,11 +318,10 @@ div.my-name {
 /*This section begins project1.html*/
 
 img.mockups {
-    width: 65%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 5%;
+    width: 50%;
 }
 
 .project-overview {
@@ -352,7 +351,6 @@ h2.section-subtitle {
     font-size: 28px;
     text-align: left;
     font-family: nunito;
-    margin-top: 5%;
 }
 
 p.section-description {
@@ -401,12 +399,12 @@ h4.column-swot {
 }
 
 .swot {
-    display:inline-block;
+    display:flex;
     text-align: left;
     clear:both;
 }
 
-ul.flex-container  {
+ul.flex-container-project  {
     float:left;
      font-size: 16px;
      display: block;
@@ -422,6 +420,11 @@ li.swot-list-item  {
     font-weight: 100;
     font-size: 16px;
     line-height: 27px;
+}
+
+li.swot-list-title {
+    text-align: center;
+    padding-bottom: 2%;
 }
 
 p.section-description-container {
@@ -454,7 +457,7 @@ justify-content:center;
 
 .flex-container-ul {
 padding-top:1%;
-margin-left:0;
+padding-left:5%;
 }
 
 
@@ -465,6 +468,7 @@ align-items:center;
 
 img.competitor-logo {
 width: 80px;
+margin-left:10%;
 }
 
 div.quotes {
@@ -475,4 +479,204 @@ margin-left:15%;
 
 img.arrow {
 margin-left:8%;
+}
+
+div.flex-container.user-personas {
+display: flex;
+clear: both;
+flex-direction: column;
+text-align:left;
+justify-content:center;
+
+} 
+
+img.persona {
+width:80px;
+height:80px;
+}
+
+div.flex-container.persona-container {
+display: flex;
+    clear: both;
+    flex-direction: column;
+    width: 30%;
+    text-align: left;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    outline-style: inset;
+    outline-width: 1px;
+
+}
+div.flex-container.persona-bio {
+flex-direction: column;
+
+}
+
+div.flex-container.img-name {
+display:flex;
+clear:both;
+flex-direction:row;
+
+}
+
+div.persona {
+margin-left: 25%;
+}
+
+ul.persona-text {
+padding-left: 0px;
+padding-bottom: 0px;
+margin-bottom: 0px;
+}
+
+div.flex-container.bio-class {
+flex-direction:column;
+padding-left: 0px;
+}
+
+ul.flex-container.bio-class {
+display: flex;
+padding-left: 5px;
+flex-direction: column;
+}
+div.subtitle {
+font-size:18px;
+padding-top: 2%;
+text-align: center;
+}
+
+div.role {
+    padding-top: 5%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 27px;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+div.flex-container.persona-text.ul {
+padding-left; 0px;
+}
+
+li.subtitle {
+font-size: 16px;
+font-style:bold;
+padding-bottom: 2%;
+}
+
+li.persona-li {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 27px;
+    letter-spacing: 0.5px;
+    padding-bottom: 5%;
+}
+
+
+.hand {
+grid-area: overlap;
+width: 400px;
+height: 400px;
+}
+
+.graphic {
+grid-area: overlap;
+width: 100px;
+height: 100px;
+
+}
+
+.container {
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr;
+grid-template-areas:"overlap";
+
+}
+
+img.signup {
+width: 500px;
+height: 500px;
+margin-left: 500px;
+margin-top: 150px;
+}
+
+img.userflow {
+width: 600px;
+height: 600px;
+}
+
+div.flows {
+display: block;
+}
+
+div.sitemap {
+padding-top: 15%;
+}
+
+div.sitemap-image {
+margin-left: 10%;
+margin-right: 10%;
+margin-top: 5%;
+}
+
+p.boxed {
+	margin-left: auto;
+	margin-right: auto;
+    width:200px;
+    height:60px;
+    background-color:#1950B1;
+    padding:10px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    
+}
+
+.hifi {
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2%;
+  width: 50%;
+  }
+
+ul.user-changes {
+    list-style: disc;
+    line-height: 27px
+}
+
+img.mindmap, img.moodboard, img.colorpalette, img.styleguide, img.doceditorold, img.dashboardold, img.dashboardnew, img.doceditornew {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+    padding-bottom:5%;
+    width: 50%;
+}
+
+img.fabcreate {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:20%;
+}
+
+p.section-description-centered {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+        font-family: Roboto;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.5px;
+    display: block;
+    width: 50%;
 }
