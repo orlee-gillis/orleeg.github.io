@@ -404,8 +404,16 @@ h4.column-swot {
     clear:both;
 }
 
-div.w3-center {
+div.w3-container {
+    clear:both;
     display:flex;
+}
+div.w3-content {
+    float:left;
+    box-shadow: 0.5px 0.5px 0.5px gray;
+}
+div.w3-center {
+    flex-direction: column;
 }
 
 button.w3-center {
@@ -422,7 +430,7 @@ button.w3-center {
     vertical-align: middle;
     box-sizing: border-box;
     border-radius: 0.12em;
-    display: table-row
+    float:right;
 }
 
 img.mySlides {
@@ -669,12 +677,13 @@ margin-left: auto;
     background-color: #1950B1;
     padding: 10px;
     text-align: center;
+    font-family: Roboto;
     font-size: 18px;
     color: white;
     vertical-align: middle;
-    display: inherit;
     box-sizing: border-box;
     border-radius:0.12em;
+    display: block;
     
 }
 
