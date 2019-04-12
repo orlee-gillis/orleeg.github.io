@@ -22,7 +22,6 @@
   </ul>
 </nav>
 </div>
-
     
     <img src="images/mockups_joint.png" class="mockups" alt="mockups">
 
@@ -85,45 +84,55 @@ Therefore, the cloud storage app will appeal to its prospective users and to the
   <h1 class="project">Process</h1>
       <img src="images/process_visual.png" class="logo" alt="og logo">
       <div class="companalysis">
-          <h2 class="section-subtitle">Competetive Analysis</h2>
+          <h2 class="section-subtitle">Competitive Analysis</h2>
           <h4 class="project-page">Seeing what's out there</h4>
           <p class="section-description">How do the key cloud storage and collaboration brands prepresent themselves?<br>
                             What are their strongest features? And how can we learn from them?<br>
                             What could we do better?
                         </p>
-<!-- Slideshow container -->
-<div class="slideshow-container">
+    </div>
+<div class="w3-container">
 
-<!-- Full-width images with number and caption text -->
-<div class="mySlides fade">
-<div class="numbertext">1 / 3</div>
-<img src="images/evernoteScreenshot.png"  alt="Evernote">
-<div class="text">EVERNOTE</div>
+<div class="w3-content" style="max-width:800px">
+  <img class="mySlides" src="images/asana.png" style="width:100%">
+  <img class="mySlides" src="images/evernotescreenshot.png" style="width:100%">
+  <img class="mySlides" src="images/getpocket.png" style="width:100%">
 </div>
 
-<div class="mySlides fade">
-<div class="numbertext">2 / 3</div>
-<img src="images/getpocket.png"  alt="pocket">
-<div class="text">POCKET</div>
+<div class="w3-center">
+  <button class="w3-button-demo" onclick="currentDiv(1)">1</button> 
+  <button class="w3-button-demo" onclick="currentDiv(2)">2</button> 
+  <button class="w3-button-demo" onclick="currentDiv(3)">3</button> 
 </div>
 
-<div class="mySlides fade">
-<div class="numbertext">3 / 3</div>
-<img src="images/asana.png" alt="asana">
-<div class="text">ASANA</div>
-</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
 
-<!-- Next and previous buttons -->
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
 
-<!-- The dots/circles -->
-<span class="dot" onclick="currentSlide(1)"></span>
-<span class="dot" onclick="currentSlide(2)"></span>
-<span class="dot" onclick="currentSlide(3)"></span>
-</div>
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+}
+</script>
     <div class="swot">
         <ul class="flex-container-project">
             <li class="swot-list-title">Strengths</li>
@@ -212,10 +221,8 @@ Therefore, the cloud storage app will appeal to its prospective users and to the
 		<div class="flex-container persona-bio">
 			<div class="persona"><img src="images/frannie.png" class="persona" alt="frannie"></div>
 			<div class="flex-container bio-class">
-			<ul class="flex-container bio-class">
 				<div class="subtitle">Freshman Frannie</div>
 				<div class="role">Graphic Design Student</div>
-			</ul>
 			</div>
 		</div>
 	
@@ -236,10 +243,11 @@ If necessary, she can upload her design mockups onto InVision, and share them wi
 
 	<div class="flex-container persona-container">
 		<div class="flex-container persona-bio">
-			<div class="persona"><img src="images/mike.png" class="persona" alt="mike"></div>
+			<div class="persona"><img src="images/mike.png" class="persona" alt="mike">
+            </div>
 			<div class="flex-container bio-class">
 				<div class="subtitle">Marketer Mike</div>
-				<div class="role">Marketing Project Manager <br> and Team Leader</div>
+				<div class="role">Marketing Team Leader</div>
 			</div>
 		</div>
 		
@@ -279,7 +287,7 @@ If necessary, she can upload her design mockups onto InVision, and share them wi
 	</ul>
 	</div>                                                
 </div>
-
+    </div>
 <div class="userstories">
 <h2 class="section-subtitle">User Stories</h2>
 <h4 class="project-page">What users want</h4>
@@ -298,7 +306,6 @@ If necessary, she can upload her design mockups onto InVision, and share them wi
 <p class="section-description">From their very first ‘meeting’, cloudy needs to assure users<br> that what they need to do is easy, intuitive and not confusing in any way. 
 Not only did our user stories need to be as sharp<br>and definitive as possible, we couldn’t put our pencils down until<br>the user flows were as fool-proof as possible.</p>
 </div>
-
 <div class="flows">
 	<h2 class="section-subtitle">User Flows</h2>
 	<div class="container">
@@ -320,10 +327,10 @@ which helped identify areas we needed to write content for.</p>
 <p class="section-description">As we know from the process of devising a user story, there’s no time to waste when it comes to user tasks. The core layout of cloudy is what matters most. Like the user flows, we needed to have utmost clarity with what the app needs to include and how to map out the underlying user processes behind the scenes</p>
 <br>
 <h4 class="project-page">LoFi</h4>
-<p class="boxed">Dashboard</p>
+    <button type="button">Dashboard</button>		
 <img src="images/dashboard_lofi.png" class="hifi" alt="dashboardlofi">
-<p class="boxed">Doc Editor</p>
-<img src="images/Doc_Editor_LoFi.png" class="hifi"alt="doc editor lofi">
+<button type="button">Doc Editor</button>
+<img src="images/Doc_Editor_LoFi.png" class="hifi" alt="doc editor lofi">
 </div>
 <div class="usertesting">
 <h2 class="section-subtitle">User Testing</h2>
@@ -345,9 +352,9 @@ which helped identify areas we needed to write content for.</p>
 <li>How can we maximize the potential of visual communication?</li>
 <li>We’re confined to the constraints of a limited drawing space, and a silent dialogue with our audience.</li>
 </ul>
-<p class="boxed">Mindmap</p>
+<button type="button">Mindmap</button>
 <img src="images/mindmap.png" class="mindmap" alt="mindmap">
-<p class="boxed">Moodboard</p>
+<button type="button">Moodboard</button>
 <img src="images/Moodboard.png" class="moodboard" alt="moodboard">
 <h4 class="project-page">Look and Feel</h4>
 <p class="section-description">Everything about the face of cloudy stems from where it all began, the design goal:<br>
@@ -388,21 +395,21 @@ Typography<br>
 While Lato looked nice and straightforward, similar to the style of Roboto, Lato seemed too ‘stickler’<br> and formal. Roboto is the typeface used in Google Material Design, and therefore a familiar, intuitive<br>choice.<br><br>
 
 Aesthetically, it has a less overwhelming and dominant presence on the screen.</p>
-<p class="boxed">Color Palette</p>
+<button type="button">Color Palette</button>
 <img src="images/ColorPalette.png" class="colorpalette" alt="colorpalette">
-<p class="boxed">Style Guide</p>
+<button type="button">Style Guide</button>
 <img src="images/styleguide.png" class="styleguide" alt="styleguide">
 </div>
 
 <div class="hifidelity">
 <h2 class="section-subtitle">Cloudy in Hi Fidelity</h2>
 <h4 class="project-page">Finding the optimal styles for the Dashboard and Doc Editor</h4>
-<p class="boxed">Dashboard</p>
+<button type="button">Dashboard</button>
 <img src="images/dashboardold.png" class="dashboardold" alt="dashboardold">
 <p class="section-description-centered">Aiming for cloudy’s functionality/navigation to use the same layout as Google Drive, I modeled the ‘Create’ and ‘Upload’ buttons off of the Google Drive Dashboard navigation.<br><br>
 
 However, my visual instinct was that they didn’t blend in to the Dashboard well, rather that they looked out of place.</p><br>
-<p class="boxed">Doc Editor</p>
+<button type="button">Doc Editor</button>
 <img src="images/doceditorold.png" class="doceditorold" alt="doc editor old">
 <p class="section-description-centered">The ‘design dilemma’ with this screen was about the color of the menu bar.<br>
 On the one hand, it would be logical for it to be the same color as the left-column navigation menu, since they are the two menus on the screen.<br><br>
@@ -419,8 +426,8 @@ We turned to real users to tell us:</p>
 <li>Which toolbar color looks better?</li>
 <li>We're striving for perfection</li>
 </ul>
-<p class="boxed">Dashboard: Version II</p>
-<img src="images/dashboardversion2.png" class="dashboardnew"alt="dashboard2">
+<button type="button">Dashboard: Version II</button>
+<img src="images/dashboardversion2.png" class="dashboardnew" alt="dashboard2">
 <p class="section-description-centered">This is the alternative to the Google Drive-based navigation menu, this one uses the Android Material<br> Styleguide’s ‘Fab’ button, which is mostly used for mobile.<br><br>
 
 I thought that this option would look more integrated into the dashboard, and familiar enough to the<br> user that he would have an easy time understanding its purpose in the user flow.<br><br>
@@ -430,7 +437,7 @@ The Fab button is a ‘unified button’. Once the user hovers over it, it expan
 <h4 class="project-page">What users thought about the FAB button</h4>
 <p class="section-description">Aron, the user that I tested, said that although he thinks that Version 1 looks better, Option 2 is more<br> intuitive, but it’s hard to explain why.<br><br>
 Aron is an Android user, so it makes sense that since he is a frequent user of the fab button, it feels<br> intuitive to him. </p>
-<p class="boxed">Doc Editor: Version II</p>
+<button type="button">Doc Editor: Version II</button>
 <img src="images/doceditorversion2png.png" class="doceditornew" alt="doceditor2">
 <h4 class="project-page">What users thought about the Menu Bar</h4>
 <p class="section-description">Miriam, the other user I tested, said it was a hard call, she thinks the navy is probably better but she’s<br> not 100% sure.
@@ -442,10 +449,9 @@ This is a relatively subtle design decision as it isn’t connected to the UX or
 My first time designing a full fledged product, I saw that the more difficult decisions and choices you<br> make between design styles and directions, the more informed the final decisions are, and the more<br> confident you are about the product you’re delivering.<br><br>
 
 It was also interesting to aim to find a middle ground between creating similar interfaces to what your<br> target audience is used to interacting with, yet within that constraint, finding a way to differentiate the<br> design both visually and functionally.</p>
-    
-</div>
+</div>   
+    </body>
     </section>
-
  <footer class="flex-container">
         <div class="my-name">
         <p>© Orlee Gillis 2018. All Rights Reserved.</p>
@@ -459,4 +465,5 @@ It was also interesting to aim to find a middle ground between creating similar 
           </ul>
     </div>
 </footer>
- </body></html>
+ </body>
+    </html>

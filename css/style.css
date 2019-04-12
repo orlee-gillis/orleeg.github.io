@@ -404,6 +404,32 @@ h4.column-swot {
     clear:both;
 }
 
+div.w3-center {
+    display:flex;
+}
+
+button.w3-center {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 150px;
+    background-color: #1950B1;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    vertical-align: middle;
+    box-sizing: border-box;
+    border-radius: 0.12em;
+    display: table-row
+}
+
+img.mySlides {
+    display:block;
+    margin-left:auto;
+    margin-right: auto;
+}
 ul.flex-container-project  {
     float:left;
      font-size: 16px;
@@ -451,7 +477,6 @@ display: flex;
 clear: both;
 flex-direction:row;
 text-align:left;
-justify-content:center;
 
 } 
 
@@ -484,10 +509,11 @@ margin-left:8%;
 div.flex-container.user-personas {
 display: flex;
 clear: both;
-flex-direction: column;
+flex-direction: row;
+flex-wrap: wrap;
 text-align:left;
 justify-content:center;
-
+    
 } 
 
 img.persona {
@@ -499,13 +525,15 @@ div.flex-container.persona-container {
 display: flex;
     clear: both;
     flex-direction: column;
-    width: 30%;
+    width: 23%;
     text-align: left;
     padding-top: 2%;
     padding-left: 2%;
     padding-right: 2%;
-    outline-style: inset;
-    outline-width: 1px;
+    outline-style:solid;
+    outline-width: 0.1px;
+    outline-color: darkgray;
+    margin: 0 5%;
 
 }
 div.flex-container.persona-bio {
@@ -521,7 +549,8 @@ flex-direction:row;
 }
 
 div.persona {
-margin-left: 25%;
+margin-left: 35%;
+width: 33%;
 }
 
 ul.persona-text {
@@ -577,6 +606,11 @@ li.persona-li {
     padding-bottom: 5%;
 }
 
+ul.flex-container.user-stories {
+   float:left;
+   text-align: left;
+    font-size: 16px;
+}
 
 .hand {
 grid-area: overlap;
@@ -625,16 +659,22 @@ margin-right: 10%;
 margin-top: 5%;
 }
 
-p.boxed {
-	margin-left: auto;
-	margin-right: auto;
-    width:200px;
-    height:60px;
-    background-color:#1950B1;
-    padding:10px;
+button {
+margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 150px;
+    height: 50px;
+    background-color: #1950B1;
+    padding: 10px;
     text-align: center;
     font-size: 18px;
     color: white;
+    vertical-align: middle;
+    display: inherit;
+    box-sizing: border-box;
+    border-radius:0.12em;
     
 }
 
@@ -679,4 +719,8 @@ p.section-description-centered {
     letter-spacing: 0.5px;
     display: block;
     width: 50%;
+}
+
+footer.flex-container {
+    background-color: darkgray;
 }
