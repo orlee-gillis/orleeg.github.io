@@ -82,7 +82,8 @@ Therefore, the cloud storage app will appeal to its prospective users and to the
             </div>
         </div>
   <h1 class="project">Process</h1>
-      <img src="images/process_visual.png" class="logo" alt="og logo">
+    <div class="visual"><img src="images/process_visual.png" class="visual" alt="visual"></div>
+     
       <div class="companalysis">
           <h2 class="section-subtitle">Competitive Analysis</h2>
           <h4 class="project-page">Seeing what's out there</h4>
@@ -91,20 +92,19 @@ Therefore, the cloud storage app will appeal to its prospective users and to the
                             What could we do better?
                         </p>
     </div>
-<div class="w3-container">
-<div class="w3-content" style="max-width:800px">
-  <img class="mySlides" src="images/asana.png" style="width:100%">
-  <img class="mySlides" src="images/evernotescreenshot.png" style="width:100%">
-  <img class="mySlides" src="images/getpocket.png" style="width:100%">
-</div>
-
+<div class="flex-container.w3-container">
 <div class="w3-center">
-  <button class="w3-button-demo" onclick="currentDiv(1)">Asana</button> 
-  <button class="w3-button-demo" onclick="currentDiv(2)">Evernote</button> 
-  <button class="w3-button-demo" onclick="currentDiv(3)">Pocket</button> 
+  <button class="w3-button-demo-1" onclick="currentDiv(1)">Asana</button> 
+  <button class="w3-button-demo-2" onclick="currentDiv(2)">Evernote</button> 
+  <button class="w3-button-demo-3" onclick="currentDiv(3)">Pocket</button> 
 </div>
-    </section>
-</div>    
+<div class="w3-content" style="max-width:800px">
+  <img class="mySlides" src="images/asana.png" alt="asana">
+  <img class="mySlides" src="images/evernotescreenshot.png" alt="evernote">
+  <img class="mySlides" src="images/getpocket.png" alt="pocket">
+</div>
+</div>  
+    
 <script>
 var slideIndex = 1;
 showDivs(slideIndex);
@@ -327,11 +327,47 @@ which helped identify areas we needed to write content for.</p>
 <p class="section-description">As we know from the process of devising a user story, there’s no time to waste when it comes to user tasks. The core layout of cloudy is what matters most. Like the user flows, we needed to have utmost clarity with what the app needs to include and how to map out the underlying user processes behind the scenes</p>
 <br>
 <h4 class="project-page">LoFi</h4>
-    <button type="button">Dashboard</button>		
-<img src="images/dashboard_lofi.png" class="hifi" alt="dashboardlofi">
-<button type="button">Doc Editor</button>
-<img src="images/Doc_Editor_LoFi.png" class="hifi" alt="doc editor lofi">
+    
+<div class="flex-container.w3-container">
+<div class="w3-center">
+  <button class="w3-button-demo-4" onclick="currentDiv(1)">Dashboard</button> 
+  <button class="w3-button-demo-4" onclick="currentDiv(2)">Doc Editor</button> 
 </div>
+    
+<div class="w3-content" style="max-width:800px">
+  <img class="mySlides2" src="images/Dashboard_lofi.png" alt="dashboard" style="width:100%">
+  <img class="mySlides2" src="images/doc_editor_lofi.png" alt="doc editor" style="width:100%">
+</div>
+</div>  
+    </div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides2");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "block";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "none";  
+  dots[slideIndex-1].className += " w3-red";
+}
+</script>	
 <div class="usertesting">
 <h2 class="section-subtitle">User Testing</h2>
 <h4 class="project-page">Changes based on user input</h4>
@@ -352,10 +388,7 @@ which helped identify areas we needed to write content for.</p>
 <li>How can we maximize the potential of visual communication?</li>
 <li>We’re confined to the constraints of a limited drawing space, and a silent dialogue with our audience.</li>
 </ul>
-<button type="button">Mindmap</button>
-<img src="images/mindmap.png" class="mindmap" alt="mindmap">
-<button type="button">Moodboard</button>
-<img src="images/Moodboard.png" class="moodboard" alt="moodboard">
+    
 <h4 class="project-page">Look and Feel</h4>
 <p class="section-description">Everything about the face of cloudy stems from where it all began, the design goal:<br>
 A product that is super intuitive to use and is consistent re: navigation and whose branding ‘makes sense’.<br><br>
@@ -395,21 +428,159 @@ Typography<br>
 While Lato looked nice and straightforward, similar to the style of Roboto, Lato seemed too ‘stickler’<br> and formal. Roboto is the typeface used in Google Material Design, and therefore a familiar, intuitive<br>choice.<br><br>
 
 Aesthetically, it has a less overwhelming and dominant presence on the screen.</p>
-<button type="button">Color Palette</button>
-<img src="images/ColorPalette.png" class="colorpalette" alt="colorpalette">
-<button type="button">Style Guide</button>
-<img src="images/styleguide.png" class="styleguide" alt="styleguide">
+
+<div class="flex-container.w3-container">
+<div class="w3-center">
+  <button class="w3-button-demo-4" onclick="currentDiv(1)">Color Palette</button> 
+  <button class="w3-button-demo-4" onclick="currentDiv(2)">Style Guide</button> 
 </div>
+    
+<div class="w3-content" style="max-width:800px">
+  <img class="mySlides3" src="images/colorPalette.png" alt="colors">
+  <img class="mySlides3" src="images/styleguide.png" alt="style guide">
+</div>
+</div>  
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides3");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += "w3-red";
+}
+</script>    
 
 <div class="hifidelity">
-<h2 class="section-subtitle">Cloudy in Hi Fidelity</h2>
+<h2 class="section-subtitle">HiFi</h2>
+    
+<div class="flex-container.w3-container">
+<div class="w3-center">
+  <button class="w3-button-demo-4" onclick="currentDiv(1)">Dashboard</button> 
+  <button class="w3-button-demo-4" onclick="currentDiv(2)">Doc Editor</button> 
+</div>
+    
+<div class="w3-content" style="max-width:800px">
+  <img class="mySlides4" src="images/dashboardVersion2.png" alt="Dashboard2" style="width:100%">
+  <img class="mySlides4" src="images/docEditorVersion2png.png" alt="doceditor2" style="width:100%">
+</div>
+</div>  
+    </div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides4");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+}
+</script>	
+
+<div class="usertesting">
+<h2 class="section-subtitle">User Testing</h2>
+<h4 class="project-page">Changes based on user input</h4>
+<ul class="user-changes">
+<li>All CTAs are 'above the fold'</li>
+<li>Terminology used for different tasks is made more consistent across all user flows</li>
+<li>'Actions' parent button removed, replaced with ‘FAB’ button as parent button for all actions</li>
+<li>cloudy product description and subtitle changed to be clearer and better defined.</li>
+</ul>
+</div>
+<div class="branding">
+<h2 class="section-subtitle">Branding - cloudy comes to life</h2>
+<h4 class="project-page">Ideation</h4>
+<p class="section-description">It's not just about navigation. We needed to strap on our thinking caps and really ask ourselves:</p>
+<ul class="user-changes">
+<li>How can we leverage the term ‘cloud storage’ and work with the imagery of clouds to represent our brand?</li>
+<li>What does the name cloudy really mean?</li>
+<li>How can we maximize the potential of visual communication?</li>
+<li>We’re confined to the constraints of a limited drawing space, and a silent dialogue with our audience.</li>
+</ul>
+<div class="flex-container.w3-container">
+<div class="w3-center">
+  <button class="w3-button-demo-4" onclick="currentDiv(1)">Mindmap</button> 
+  <button class="w3-button-demo-4" onclick="currentDiv(2)">Moodboard</button> 
+</div>
+    
+<div class="w3-content" style="max-width:800px">
+  <img class="mySlides2" src="images/mindmap.png" alt="mindmap">
+  <img class="mySlides2" src="images/Moodboard.png" alt="moodboard">
+</div>
+</div>  
+    </div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides2");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "block";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "none";  
+  dots[slideIndex-1].className += " w3-red";
+}
+</script>
 <h4 class="project-page">Finding the optimal styles for the Dashboard and Doc Editor</h4>
-<button type="button">Dashboard</button>
+<button class="regular" type="button">Dashboard</button>
 <img src="images/dashboardold.png" class="dashboardold" alt="dashboardold">
 <p class="section-description-centered">Aiming for cloudy’s functionality/navigation to use the same layout as Google Drive, I modeled the ‘Create’ and ‘Upload’ buttons off of the Google Drive Dashboard navigation.<br><br>
 
 However, my visual instinct was that they didn’t blend in to the Dashboard well, rather that they looked out of place.</p><br>
-<button type="button">Doc Editor</button>
+<button class="regular" type="button">Doc Editor</button>
 <img src="images/doceditorold.png" class="doceditorold" alt="doc editor old">
 <p class="section-description-centered">The ‘design dilemma’ with this screen was about the color of the menu bar.<br>
 On the one hand, it would be logical for it to be the same color as the left-column navigation menu, since they are the two menus on the screen.<br><br>
@@ -426,7 +597,7 @@ We turned to real users to tell us:</p>
 <li>Which toolbar color looks better?</li>
 <li>We're striving for perfection</li>
 </ul>
-<button type="button">Dashboard: Version II</button>
+<button class="regular" type="button">Dashboard: Version II</button>
 <img src="images/dashboardversion2.png" class="dashboardnew" alt="dashboard2">
 <p class="section-description-centered">This is the alternative to the Google Drive-based navigation menu, this one uses the Android Material<br> Styleguide’s ‘Fab’ button, which is mostly used for mobile.<br><br>
 
@@ -437,7 +608,7 @@ The Fab button is a ‘unified button’. Once the user hovers over it, it expan
 <h4 class="project-page">What users thought about the FAB button</h4>
 <p class="section-description">Aron, the user that I tested, said that although he thinks that Version 1 looks better, Option 2 is more<br> intuitive, but it’s hard to explain why.<br><br>
 Aron is an Android user, so it makes sense that since he is a frequent user of the fab button, it feels<br> intuitive to him. </p>
-<button type="button">Doc Editor: Version II</button>
+<button class="regular" type="button">Doc Editor: Version II</button>
 <img src="images/doceditorversion2png.png" class="doceditornew" alt="doceditor2">
 <h4 class="project-page">What users thought about the Menu Bar</h4>
 <p class="section-description">Miriam, the other user I tested, said it was a hard call, she thinks the navy is probably better but she’s<br> not 100% sure.
@@ -450,7 +621,6 @@ My first time designing a full fledged product, I saw that the more difficult de
 
 It was also interesting to aim to find a middle ground between creating similar interfaces to what your<br> target audience is used to interacting with, yet within that constraint, finding a way to differentiate the<br> design both visually and functionally.</p>
 </div>   
-    </body>
     </section>
  <footer class="flex-container">
         <div class="my-name">
