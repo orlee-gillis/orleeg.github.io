@@ -92,19 +92,28 @@ Therefore, the cloud storage app will appeal to its prospective users and to the
                             What could we do better?
                         </p>
     </div>
-<div class="flex-container.w3-container">
+
+<style>
+.mySlides {display:none}
+</style>
+<body>
+
+
+<div class="w3-content" style="max-width:80%">
+  <img class="mySlides" src="images/asana.png" style="width:100%">
+  <img class="mySlides" src="images/evernoteScreenshot.png" style="width:100%">
+  <img class="mySlides" src="images/getpocket.png" style="width:100%">
+</div>
+
 <div class="w3-center">
-  <button class="w3-button-demo-1" onclick="currentDiv(1)">Asana</button> 
-  <button class="w3-button-demo-2" onclick="currentDiv(2)">Evernote</button> 
-  <button class="w3-button-demo-3" onclick="currentDiv(3)">Pocket</button> 
+  <div class="w3-section">
+    <button class="w3-button" onclick="plusDivs(-1)">ASANA</button>
+    <button class="w3-button" onclick="plusDivs(1)">EVERNOTE</button>
+    <button class="w3-button" onclick="plusDivs(1)">POCKET</button>
+      
+  </div>
 </div>
-<div class="w3-content" style="max-width:800px">
-  <img class="mySlides" src="images/asana.png" alt="asana">
-  <img class="mySlides" src="images/evernotescreenshot.png" alt="evernote">
-  <img class="mySlides" src="images/getpocket.png" alt="pocket">
-</div>
-</div>  
-    
+
 <script>
 var slideIndex = 1;
 showDivs(slideIndex);
@@ -133,6 +142,8 @@ function showDivs(n) {
   dots[slideIndex-1].className += " w3-red";
 }
 </script>
+
+
     <div class="swot">
         <ul class="flex-container-project">
             <li class="swot-list-title">Strengths</li>
@@ -328,18 +339,17 @@ which helped identify areas we needed to write content for.</p>
 <br>
 <h4 class="project-page">LoFi</h4>
     
-<div class="flex-container.w3-container">
 <div class="w3-center">
-  <button class="w3-button-demo-4" onclick="currentDiv(1)">Dashboard</button> 
-  <button class="w3-button-demo-4" onclick="currentDiv(2)">Doc Editor</button> 
+  <div class="w3-section">
+    <button class="w3-button" onclick="plusDivs(-1)">Dashboard</button> 
+    <button class="w3-button" onclick="plusDivs(1)">Doc Editor</button>    
+  </div>
+<div class="w3-content" style="max-width:80%">
+  <img class="mySlides1" src="images/Dashboard_lofi.png" style="width:100%">
+  <img class="mySlides1" src="images/doc_editor_lofi.png" style="width:100%">
 </div>
-    
-<div class="w3-content" style="max-width:800px">
-  <img class="mySlides2" src="images/Dashboard_lofi.png" alt="dashboard" style="width:100%">
-  <img class="mySlides2" src="images/doc_editor_lofi.png" alt="doc editor" style="width:100%">
 </div>
-</div>  
-    </div>
+
 <script>
 var slideIndex = 1;
 showDivs(slideIndex);
@@ -354,20 +364,21 @@ function currentDiv(n) {
 
 function showDivs(n) {
   var i;
-  var x = document.getElementsByClassName("mySlides2");
+  var x = document.getElementsByClassName("mySlides1");
   var dots = document.getElementsByClassName("demo");
   if (n > x.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = x.length}
   for (i = 0; i < x.length; i++) {
-    x[i].style.display = "block";  
+    x[i].style.display = "none";  
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" w3-red", "");
   }
-  x[slideIndex-1].style.display = "none";  
+  x[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " w3-red";
 }
-</script>	
+</script>
+
 <div class="usertesting">
 <h2 class="section-subtitle">User Testing</h2>
 <h4 class="project-page">Changes based on user input</h4>
@@ -429,17 +440,66 @@ While Lato looked nice and straightforward, similar to the style of Roboto, Lato
 
 Aesthetically, it has a less overwhelming and dominant presence on the screen.</p>
 
-<div class="flex-container.w3-container">
-<div class="w3-center">
-  <button class="w3-button-demo-4" onclick="currentDiv(1)">Color Palette</button> 
-  <button class="w3-button-demo-4" onclick="currentDiv(2)">Style Guide</button> 
+    <div class="hifidelity">
+<div class="flex-container w3-center">
+  <div class="w3-section">
+
+    <button class="w3-button" onclick="plusDivs(-1)">Color Palette</button>
+    <button class="w3-button" onclick="plusDivs(1)">Style Guide</button>
+  </div>
+<div class="w3-content" style="max-width:80%">
+  <img class="mySlides2" src="images/colorPalette.png" style="width:80%">
+  <img class="mySlides2" src="images/styleguide.png" style="width:80%">
 </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides2");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+}
+</script>
+    </div>
+
+
+
+<div class="brand">
+<h2 class="section-subtitle">Brand Identity</h2>
     
-<div class="w3-content" style="max-width:800px">
-  <img class="mySlides3" src="images/colorPalette.png" alt="colors">
-  <img class="mySlides3" src="images/styleguide.png" alt="style guide">
+
+<div class="flex-container w3-center">
+  <div class="w3-section">
+
+    <button class="w3-button" onclick="plusDivs(-1)">Dashboard</button>
+    <button class="w3-button" onclick="plusDivs(1)">Doc Editor</button>
+  </div>
+<div class="w3-content" style="max-width:80%">
+  <img class="mySlides3" src="images/dashboardVersion2.png" style="width:80%">
+  <img class="mySlides3" src="images/docEditorVersion2png.png" style="width:80%">
 </div>
-</div>  
+</div>
 
 <script>
 var slideIndex = 1;
@@ -466,25 +526,45 @@ function showDivs(n) {
     dots[i].className = dots[i].className.replace(" w3-red", "");
   }
   x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += "w3-red";
+  dots[slideIndex-1].className += " w3-red";
 }
-</script>    
-
-<div class="hifidelity">
-<h2 class="section-subtitle">HiFi</h2>
-    
-<div class="flex-container.w3-container">
-<div class="w3-center">
-  <button class="w3-button-demo-4" onclick="currentDiv(1)">Dashboard</button> 
-  <button class="w3-button-demo-4" onclick="currentDiv(2)">Doc Editor</button> 
-</div>
-    
-<div class="w3-content" style="max-width:800px">
-  <img class="mySlides4" src="images/dashboardVersion2.png" alt="Dashboard2" style="width:100%">
-  <img class="mySlides4" src="images/docEditorVersion2png.png" alt="doceditor2" style="width:100%">
-</div>
-</div>  
+</script>
     </div>
+
+<div class="usertesting">
+<h2 class="section-subtitle">User Testing</h2>
+<h4 class="project-page">Changes based on user input</h4>
+<ul class="user-changes">
+<li>All CTAs are 'above the fold'</li>
+<li>Terminology used for different tasks is made more consistent across all user flows</li>
+<li>'Actions' parent button removed, replaced with ‘FAB’ button as parent button for all actions</li>
+<li>cloudy product description and subtitle changed to be clearer and better defined.</li>
+</ul>
+</div>
+<div class="branding">
+<h2 class="section-subtitle">Branding - cloudy comes to life</h2>
+<h4 class="project-page">Ideation</h4>
+<p class="section-description">It's not just about navigation. We needed to strap on our thinking caps and really ask ourselves:</p>
+<ul class="user-changes">
+<li>How can we leverage the term ‘cloud storage’ and work with the imagery of clouds to represent our brand?</li>
+<li>What does the name cloudy really mean?</li>
+<li>How can we maximize the potential of visual communication?</li>
+<li>We’re confined to the constraints of a limited drawing space, and a silent dialogue with our audience.</li>
+</ul>
+
+        <div class="brainstorming">
+<div class="flex-container w3-center">
+  <div class="w3-section">
+
+    <button class="w3-button" onclick="plusDivs(-1)">Mindmap</button>
+    <button class="w3-button" onclick="plusDivs(1)">Moodboard</button>
+  </div>
+<div class="w3-content" style="max-width:80%">
+  <img class="mySlides4" src="images/mindmap.png" style="width:80%">
+  <img class="mySlides4" src="images/Moodboard.png" style="width:80%">
+</div>
+</div>
+
 <script>
 var slideIndex = 1;
 showDivs(slideIndex);
@@ -512,40 +592,27 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " w3-red";
 }
-</script>	
-
-<div class="usertesting">
-<h2 class="section-subtitle">User Testing</h2>
-<h4 class="project-page">Changes based on user input</h4>
-<ul class="user-changes">
-<li>All CTAs are 'above the fold'</li>
-<li>Terminology used for different tasks is made more consistent across all user flows</li>
-<li>'Actions' parent button removed, replaced with ‘FAB’ button as parent button for all actions</li>
-<li>cloudy product description and subtitle changed to be clearer and better defined.</li>
-</ul>
-</div>
-<div class="branding">
-<h2 class="section-subtitle">Branding - cloudy comes to life</h2>
-<h4 class="project-page">Ideation</h4>
-<p class="section-description">It's not just about navigation. We needed to strap on our thinking caps and really ask ourselves:</p>
-<ul class="user-changes">
-<li>How can we leverage the term ‘cloud storage’ and work with the imagery of clouds to represent our brand?</li>
-<li>What does the name cloudy really mean?</li>
-<li>How can we maximize the potential of visual communication?</li>
-<li>We’re confined to the constraints of a limited drawing space, and a silent dialogue with our audience.</li>
-</ul>
-<div class="flex-container.w3-container">
-<div class="w3-center">
-  <button class="w3-button-demo-4" onclick="currentDiv(1)">Mindmap</button> 
-  <button class="w3-button-demo-4" onclick="currentDiv(2)">Moodboard</button> 
-</div>
-    
-<div class="w3-content" style="max-width:800px">
-  <img class="mySlides2" src="images/mindmap.png" alt="mindmap">
-  <img class="mySlides2" src="images/Moodboard.png" alt="moodboard">
-</div>
-</div>  
+</script>
     </div>
+
+
+
+<div class="brand">
+<h2 class="section-subtitle">Brand Identity</h2>
+    
+
+<div class="flex-container w3-center">
+  <div class="w3-section">
+
+    <button class="w3-button" onclick="plusDivs(-1)">Dashboard</button>
+    <button class="w3-button" onclick="plusDivs(1)">Doc Editor</button>
+  </div>
+<div class="w3-content" style="max-width:80%">
+  <img class="mySlides3" src="images/dashboardVersion2.png" style="width:80%">
+  <img class="mySlides3" src="images/docEditorVersion2png.png" style="width:80%">
+</div>
+</div>
+
 <script>
 var slideIndex = 1;
 showDivs(slideIndex);
@@ -560,20 +627,22 @@ function currentDiv(n) {
 
 function showDivs(n) {
   var i;
-  var x = document.getElementsByClassName("mySlides2");
+  var x = document.getElementsByClassName("mySlides3");
   var dots = document.getElementsByClassName("demo");
   if (n > x.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = x.length}
   for (i = 0; i < x.length; i++) {
-    x[i].style.display = "block";  
+    x[i].style.display = "none";  
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" w3-red", "");
   }
-  x[slideIndex-1].style.display = "none";  
+  x[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " w3-red";
 }
 </script>
+    </div>
+
 <h4 class="project-page">Finding the optimal styles for the Dashboard and Doc Editor</h4>
 <button class="regular" type="button">Dashboard</button>
 <img src="images/dashboardold.png" class="dashboardold" alt="dashboardold">
@@ -635,5 +704,13 @@ It was also interesting to aim to find a middle ground between creating similar 
           </ul>
     </div>
 </footer>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-36755496-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-36755496-1');
+</script>
  </body>
     </html>
