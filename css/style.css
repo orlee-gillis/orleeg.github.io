@@ -14,6 +14,7 @@ font-size:14px;
 
 nav {
     font-size: 2rem;
+    float:left;
 }
 
 
@@ -89,6 +90,10 @@ margin-right: 62%;
   overflow: hidden;
 }
 
+div.hamburger {
+    text-align:center;
+    display:none;
+}
 /* Style the links inside the navigation bar */
 .topnav a {
   float: right;
@@ -104,7 +109,11 @@ margin-right: 62%;
 a {
 text-decoration:none;
 color:#000;
+display:flex;
+flex-direction: column;
+padding: 0.5%;
 }
+
 
 section.hero {
     width:auto;
@@ -159,7 +168,8 @@ font-size:18px;
 color:#262626;
 float:left;
 clear:both;
-padding-bottom:50px;
+padding-bottom:10%;
+padding-top: 5%;
 margin:0;
 }
 
@@ -280,17 +290,17 @@ padding-top:30px;
 padding-bottom:30px;
 height:20%;
 display:block;
-margin-left: 8%;
 }
 
+h4.i-use-text {
+    margin-left:8%;
+}
 footer {
 left:10px;
 right:10px;
 bottom:0;
 width:100%;
-background-color:#F5F5F5;
 text-align:center;
-align-items:center;
 }
 
 .bottom-nav {
@@ -301,9 +311,16 @@ margin-right:40px;
 
 div.my-name {
 float:left;
-margin-left:94px;
 font-size:16px;
+display:flex;
+flex-wrap: nowrap;
 }
+
+div.my-name.p {
+    margin-left: 12%;
+}
+
+
 
 .nav-item {
 float:right;
@@ -644,7 +661,6 @@ width:50%;
 }
 
 footer.flex-container {
-background-color:#A9A9A9;
 display: flex;
 text-align: center;
 flex-direction: row;
@@ -703,22 +719,82 @@ text-align:center;
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
       
-          section.hero  {
+      
+    div.logo-container {
+       margin:auto;
+       bottom: 0;
+        float:none;
+      }  
+    ul.flex-container {
+          display: none;
+              
+      }  
+      
+      nav {
+          float:none;
+      }
+      li.navigation {
+          font-size: 16px;
+      }
+      
+      div.hamburger {
+          display: contents;
+      }  
+    section.hero  {
         flex-wrap: wrap;
-        display: flex;
-        width: 70%;
+        display: block;
 }
       
-        h1 {
-        font-size: 2rem;
+    h1.homepage              {
+        font-size: 32px;
+        padding: 0px;
     }
-    img.rubiks {
-        align-items: center;
-        width: 20%;
-        height: 20%;
-        
+      
+      h4 {
+        font-size: 16px;
+      }
+    
+      img.rubiks {
+    width: 30%;
     }
 
+      div.cloudy-container {
+          padding-top: 0;
+      }
+      
+      
+      img.cloudy {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+      }
+      
+      h2 {
+          font-size:24px;
+      }
+      
+      div.caseStudyBtn,.caseStudyBtn2,.caseStudyBtn3,.caseStudyBtn4 {
+          
+      }
+      div.project {
+          flex-direction: column;
+      }
+      div.green,.blue {
+          background: none;
+          box-shadow: none;
+      }
+      div.yellow {
+          display:none;
+      }
+      div.title-column-left {
+          display:none;
+      }
+      
+      .myTools {
+          width:20%;
+      }
+      
 }
 
 

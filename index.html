@@ -9,7 +9,50 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-     
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <style>
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+</style>    
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138259060-1"></script>
 <script>
@@ -36,7 +79,35 @@
       <li class="navigation"><a href="#">Contact</a></li>
       </ul>
   </nav>
+<!-- Simulate a smartphone / tablet -->
 
+<!-- Top Navigation Menu -->
+<div class="hamburger">
+  <a href="#home" class="active"></a>
+  <div id="myLinks" class="myLinks">
+    <a href="#">Work</a>
+    <a href="#">Writing</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<!-- End smartphone / tablet look -->
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
     <!--Hero content-->
     <section class="hero">
   <h1 class="homepage">I’m a UX Designer based in Tel Aviv.</h1>
@@ -95,7 +166,7 @@
 <!--footer-->
 <footer class="flex-container">
     <nav>
-    <div class="my-name"><p>© Orlee Gillis 2018. All Rights Reserved.</p></div>
+    <div class="my-name"><p>© Orlee Gillis 2018</p></div>
 
     <ul class="flex-container">
       <li class="navigation"><a href="#">Work</a></li>
@@ -104,6 +175,7 @@
       <li class="navigation"><a href="#">Contact</a></li>
       </ul>
   </nav>
+<!-- Top Navigation Menu -->
 </footer>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138259060-1"></script>
 <script>
