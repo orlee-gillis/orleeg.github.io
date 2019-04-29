@@ -112,6 +112,7 @@ section.hero {
     margin-left: 10%;
     margin-right: 10%;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 h1.homepage {
@@ -139,6 +140,7 @@ clear:both;
 img.rubiks {
 float:right;
 }
+
 
 div.project {
 clear:both;
@@ -695,3 +697,33 @@ line-height:27px;
 p.toggles {
 text-align:center;
 }
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+      
+          section.hero  {
+        flex-wrap: wrap;
+        display: flex;
+        width: 70%;
+}
+      
+        h1 {
+        font-size: 2rem;
+    }
+    img.rubiks {
+        align-items: center;
+        width: 20%;
+        height: 20%;
+        
+    }
+
+}
+
+
+
+
+    
+    
+  
