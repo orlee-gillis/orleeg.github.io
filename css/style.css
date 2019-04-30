@@ -15,14 +15,12 @@ body {
 
 
 nav.flex-container {
-    display:flex;
     clear:both;
     flex-direction:row;
     text-align:right;
     flex-wrap: nowrap;
-    margin-top: 5%;
+    padding: 5%;
     width:100%;
-    margin-left: 5%;
 
 }
 
@@ -56,6 +54,22 @@ ul.flex-container {
     flex-wrap: wrap;
 }
 
+ul.flex-container-footer {
+    padding-right: 5%;
+    font-family:Roboto;
+    font-style:normal;
+    font-weight:300;
+    line-height:normal;
+    font-size:24px;
+    text-align:center;
+    color:#262626;
+    float:right;
+    flex-direction:row;
+    display:flex;
+    justify-content: space-around;
+    list-style:none;
+    flex-wrap: wrap;
+}
 
 nav ul li {
 font-family:Roboto;
@@ -122,7 +136,7 @@ font-family:Roboto;
 font-style:normal;
 font-weight:300;
 line-height:normal;
-font-size:36px;
+font-size:28px;
 color:black;
 clear:both;
 margin-top: 0;
@@ -298,6 +312,7 @@ float:left;
 font-size:16px;
 display:flex;
 flex-wrap: nowrap;
+margin-top: 2%;
 }
 
 div.my-name.p {
@@ -627,7 +642,6 @@ width:50%;
 
 footer.flex-container {
 text-align: center;
-width: 90%;
 margin-left: 5%;
 vertical-align: middle;
 }
@@ -649,13 +663,20 @@ border-radius:2px;
 margin:0 auto;
 }
 
-img.mytools,img.mockups {
+img.mockups {
 display:block;
-margin-left:auto;
-margin-right:auto;
-width:50%;
+width:60%;
+padding-top: 5%;
+padding-bottom: 5%;
 }
 
+img.mytools {
+    display:block;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+}
 p.project-description,p.section-description {
 font-family:Roboto;
 font-style:normal;
@@ -697,7 +718,6 @@ img.about-hero-image {
 
 p {
     font-size: 16px;
-    margin-right: 5%;
 }
 
 @media only screen 
