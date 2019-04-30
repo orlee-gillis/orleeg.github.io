@@ -732,7 +732,7 @@ margin: 0 auto;
       
       div.hamburger {
           display: contents;
-          float:right;
+          text-align: center;
       }  
     section.hero  {
         flex-wrap: wrap;
@@ -745,7 +745,7 @@ margin: 0 auto;
 }
       
     h1.homepage              {
-        font-size: 24px;
+        font-size: 28px;
         padding: 0px;
         vertical-align: middle;
     }
@@ -855,6 +855,11 @@ div.hamburger {
     visibility: visible;
     float: right;
 }
+        
+div.container {
+    margin-left: 8%;
+    height: 100%;
+        }
         
 h4 {
     
