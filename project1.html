@@ -23,6 +23,57 @@
     
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <style>
+     
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 16px;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  position: relative;
+}
+
+
+.topnav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: none;
+}
+
+.icon {
+    display: inline-block;
+     }
+     
+#myLinks {
+  display: none;
+}
+
+</style>    
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138259060-1"></script>
 <script>
@@ -42,30 +93,48 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
 <div class="container">
-<nav>
-        <div class="logo-container">
-        <img src="images/logoCleared.png" class="responsive" alt="og logo">
-        </div>
-<!--<ul class="flex-container">
-  <li class="navigation"><a href="#">Work</a></li>
-  <li class="navigation"><a href="#">Writing</a></li>
-  <li class="navigation"><a href="#">About</a></li>
-  <li class="navigation"><a href="#">Contact</a></li>
-  </ul>-->
+<nav class="flex-container">
+    <div class="logo-container">
+      <img src="images/logoCleared.png" class="logo" alt="og logo">
+    </div>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <ul class="flex-container">
+      <li class="navigation"><a href="#">Work</a></li>
+      <li class="navigation"><a href="#">Writing</a></li>
+      <li class="navigation"><a href="#">About</a></li>
+      <li class="navigation"><a href="#">Contact</a></li>
+      </ul>
+  </nav>
+<!-- Simulate a smartphone / tablet -->
 
-<div class="topnav" id="myTopnav">
-  <a href="#work" class="active">Work</a>
-  <a href="#writing">Writing</a>
-  <a href="#about">About</a>
-  <a href="#contact">Contact</a>
+<!-- Top Navigation Menu -->
+<div class="hamburger">
+  <a href="#home" class="active"></a>
+  <div id="myLinks" class="myLinks">
+    <a href="#">Work</a>
+    <a href="#">Writing</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
 </div>
-</nav> 
+     
+<script>
+    function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+<!-- End smartphone / tablet look -->
 </div>
     
     <img src="images/mockups_joint.png" class="mockups" alt="mockups">

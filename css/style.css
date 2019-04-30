@@ -7,90 +7,64 @@ html {
 }
 
 body {
-width:100%;
-font-family:Roboto, sans-serif;
-font-size:14px;
+    width:100%;
+    font-family:Roboto, sans-serif;
+    font-size:14px;
+    margin: auto;
 }
 
 
+nav.flex-container {
+    display:flex;
+    clear:both;
+    flex-direction:row;
+    text-align:right;
+    flex-wrap: nowrap;
+    margin-top: 5%;
+    width:100%;
+    margin-left: 5%;
 
+}
+
+.logo-container {
+    float:left;
+    display: flex;
+    flex-direction:row;
+}
+
+
+.flex-container-ul {
+padding-top:1%;
+padding-left:5%;
+}
 
 ul.flex-container {
-font-family:Roboto;
-font-style:normal;
-font-weight:300;
-line-height:normal;
-font-size:24px;
-text-align:center;
-color:#262626;
-float:right;
-flex-direction:row;
-display:flex;
-margin: 0;
-padding: 0;
-justify-content: space-around;
-list-style:none;
-flex-wrap: wrap;
+    font-family:Roboto;
+    font-style:normal;
+    font-weight:300;
+    line-height:normal;
+    font-size:24px;
+    text-align:center;
+    color:#262626;
+    float:right;
+    flex-direction:row;
+    display:flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+    list-style:none;
+    flex-wrap: wrap;
 }
 
 
 nav ul li {
 font-family:Roboto;
-font-size:24px;
+font-size:18px;
 padding:0.5rem;
 flex:auto;
 text-align: center;
 }
 
-nav ul li:hover {
-color:blue;
-}
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-
-    ul.flex-container {
-        flex-direction: column;
-        
-    }
-    
-}
-
-.container {
-padding-top:30px;
-width:70rem;
-height: 100vh; 
-padding-bottom:30px;
-grid-template-columns:1fr;
-grid-template-rows:1fr;
-grid-template-areas:overlap;
-margin:0 auto;
-}
-
-
-.logo-container {
-top:0;
-bottom:33.77%;
-float:left;
-margin-left: 8%;
-margin-right: 62%;
-}
-
-.responsive {
-  max-width: 100%;
-  height: auto;
-
-}
-
-.topnav {
-  overflow: hidden;
-}
-
-div.hamburger {
-    text-align:center;
-    display:none;
-}
-/* Style the links inside the navigation bar */
 .topnav a {
   float: right;
   display: block;
@@ -101,6 +75,11 @@ div.hamburger {
   font-size: 17px;
 }
 
+div.hamburger {
+    visibility: hidden;
+}
+
+/* Style the links inside the navigation bar */
 
 a {
 text-decoration:none;
@@ -109,11 +88,11 @@ display:flex;
 flex-direction: column;
 padding: 0.5%;
 }
+    }
 
-
-section.hero {
+section.main {
     width:auto;
-    height: 20rem;
+    height: 100%;
     margin-left: 10%;
     margin-right: 10%;
     flex-direction: column;
@@ -121,6 +100,12 @@ section.hero {
     margin-bottom: 5%;
 }
 
+/* Main page*/
+
+div.container {
+    margin-left: 10%;
+    margin-right: 10%;
+}
 h1.homepage {
 font-family:Roboto;
 font-style:normal;
@@ -130,7 +115,6 @@ font-size:48px;
 text-align:left;
 color:#262626;
 clear:both;
-padding-top:4%;
 }
 
 h4 {
@@ -138,9 +122,12 @@ font-family:Roboto;
 font-style:normal;
 font-weight:300;
 line-height:normal;
-font-size:32px;
-color:#262626;
+font-size:36px;
+color:black;
 clear:both;
+margin-top: 0;
+margin-bottom: 0;
+
 }
 
 img.rubiks {
@@ -166,7 +153,7 @@ color:#262626;
 float:left;
 clear:both;
 padding-bottom:10%;
-padding-top: 5%;
+padding-top: 10%;
 margin:0;
 }
 
@@ -321,6 +308,7 @@ div.my-name.p {
     visibility: hidden;
 }
 
+
 .nav-item {
 float:right;
 padding-left:10px;
@@ -408,29 +396,6 @@ margin-top:0;
 .view-button {
 padding-left:50%;
 padding-top:3%;
-}
-
-div.flex-container {
-display:flex;
-clear:both;
-flex-direction:column;
-text-align:left;
-flex-wrap: wrap;
-}
-
-nav.flex-container {
-display:flex;
-clear:both;
-flex-direction:row;
-text-align:right;
-flex-wrap: nowrap;
-margin-top: 5%;
-width:100%;
-}
-
-.flex-container-ul {
-padding-top:1%;
-padding-left:5%;
 }
 
 div.flex-container-child {
@@ -688,7 +653,7 @@ img.mytools,img.mockups {
 display:block;
 margin-left:auto;
 margin-right:auto;
-width:30%;
+width:50%;
 }
 
 p.project-description,p.section-description {
@@ -714,6 +679,27 @@ p.toggles {
 text-align:center;
 }
 
+/*about me page*/
+div.logo-container-about {
+    top: 0;
+    bottom: 33.77%;
+    float: left;
+    margin-left: 8%;
+    margin-right: 62%;
+}
+
+img.about-hero-image {
+    width:100%;
+    height:50%;
+    margin-top:3%;
+    margin-left: 0%;
+}
+
+p {
+    font-size: 16px;
+    margin-right: 5%;
+}
+
 @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
@@ -724,7 +710,13 @@ text-align:center;
        margin:auto;
        bottom: 0;
         float:none;
-      }  
+      }
+      div.logo-container-about {
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+margin: 0 auto;
+}
     ul.flex-container {
         display: none;
         clear:both;
@@ -740,11 +732,16 @@ text-align:center;
       
       div.hamburger {
           display: contents;
+          float:right;
       }  
     section.hero  {
         flex-wrap: wrap;
         display: block;
         clear:both;
+        height:100%;
+        width:90%;
+        margin-left:5%;
+        margin-bottom: 5%;
 }
       
     h1.homepage              {
@@ -804,8 +801,75 @@ text-align:center;
       }
     }
 
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+    and (min-device-width : 768px) 
+    and (max-device-width : 1024px) 
+    and (-webkit-min-device-pixel-ratio: 1){
 
 
+    nav.flex-container {
+        margin-left: 0;
+    }
+    
+    ul.flex-container {
+        flex-direction: column;
+        
+    }
+    
+
+
+    div.container {
+        padding-top:30px;
+        width:90%;
+        padding-bottom:30px;
+        margin-right: 10%;
+}
+
+
+.logo-container {
+    top:0;
+    bottom:33.77%;
+    float:none;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+  align-items: center;
+
+}
+
+.topnav {
+  overflow: hidden;
+    margin:auto;
+}
+
+div.hamburger {
+    text-align:center;
+    visibility: visible;
+    float: right;
+}
+        
+h4 {
+    
+    font-size: 22px;
+        }
+
+nav {
+    display:flex;
+    flex-direction: row;
+    margin-left: 4%;
+    clear: both;
+        }       
+        
+        
+}
 
 
     

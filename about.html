@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="utf-8">
+   <title>About Me | Orlee Gillis</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <style>
+     
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 16px;
+  background-color: white;
+  border: 1px solid black;
+  outline: 
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+     
+#myLinks {
+  display: none;
+}
+
+</style>    
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138259060-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-138259060-1');
+</script>
+  </head>
+    <!--Body-->
+ <body>
+<nav class="flex-container">
+    <div class="logo-container">
+      <img src="images/logoCleared.png" class="logo" alt="og logo">
+    </div>
+
+    <ul class="flex-container">
+      <li class="navigation"><a href="#">Work</a></li>
+      <li class="navigation"><a href="#">Writing</a></li>
+      <li class="navigation"><a href="#">About</a></li>
+      <li class="navigation"><a href="#">Contact</a></li>
+      </ul>
+  </nav>
+<!-- Simulate a smartphone / tablet -->
+
+<!-- Top Navigation Menu -->
+<div class="hamburger">
+  <a href="#home" class="active"></a>
+  <div id="myLinks" class="myLinks">
+    <a href="#">Work</a>
+    <a href="#">Writing</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+     
+<script>
+    function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+<!-- End smartphone / tablet look -->
+
+<img src="images/hero_image_about.png" class="about-hero-image">
+<div class="container">    
+        <h1 class="homepage">I’m Orlee, an NYC-expat who now lives in Tel Aviv, Israel. </h1>
+    
+        <h4>Walk the Walk</h4>
+        <p>I’m a city girl through and through, taking my first steps on Manhattan’s grid-based streetmap, my natural ecosystem is a complex interface where there’s tons of information and character to be sized up right, and of course, fitted into a micro-sized space. <br><br>
+        
+        My passion for visual learning and information architecture, along with expert writing skills, has showed me that a multi-disciplinary art like UX, where expression, communication, presentation, cognitive understanding, artistic talent, and technical skills work like a dream team -- is where I belong. 
+        </p>
+        
+        <h4>Talk the Talk</h4>
+        <p>My undergraduate degree is in Education (Teaching English as a foreign language, to be exact) attesting to my knack for information architecture, as I embraced the concept of multiple intelligences and tapping in to each individual's’ (teacher and student alike) way of processing and conveying information.<br><br>
+        
+        No doubt about it, I’m a visual learner. And my strength for visual communication, coupled with my succinct writing skills, drive me to craft visual stories that speak both to the collective and to the individual.<br><br> 
+
+        Taking the personality, methodology, and constraints of a product, (such as the English language), is a conversation to be had. Not only between speaker and listener, but between storyteller and user, too. </p>
+        
+        <h4>Seeing is Believing</h4>
+        <p> I’ve been working in Content Marketing for the past five years, which is where I encountered the art of UX/UI Design.<br><br> 
+            
+        Writing content strategy, blog posts, microcopy, and all that jazz, I began to appreciate the visual side of user engagement. Seeing is believing, and the aesthetic, <br>navigation, and identity of a brand story can only survive when the user experiences it to the core. </p>
+        
+        <h4>The Real Deal</h4>
+        <p>Content Marketing is the face, persona, and existence of a brand and its product. The fusion between content and the user’s experience is what I see as the real deal. My mantra, as I like to call it, is: <br><br>
+
+        Keep the user with you, please. Talk to him, guide him, empower him with all your brand has to offer, so that he knows his way around. And likes being there. </p>
+    </div>
+    <footer class="flex-container">
+    <nav>
+    <div class="my-name"><p>© Orlee Gillis 2018</p></div>
+
+    <ul class="flex-container">
+      <li class="navigation"><a href="#">Work</a></li>
+      <li class="navigation"><a href="#">Writing</a></li>
+      <li class="navigation"><a href="#">About</a></li>
+      <li class="navigation"><a href="#">Contact</a></li>
+      </ul>
+
+<!-- Top Navigation Menu -->
+
+    
+<!-- Simulate a smartphone / tablet -->
+
+<!-- Top Navigation Menu -->
+<div class="hamburger">
+  <a href="#home" class="active"></a>
+  <div id="myLinks" class="myLinks">
+    <a href="#">Work</a>
+    <a href="#">Writing</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+  </nav>
+<!-- End smartphone / tablet look -->
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</footer>
+<!-- Top Navigation Menu -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138259060-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-138259060-1');
+</script>
+ </body>
+</html>
