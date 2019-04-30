@@ -12,10 +12,6 @@ font-family:Roboto, sans-serif;
 font-size:14px;
 }
 
-nav {
-    font-size: 2rem;
-    float:left;
-}
 
 
 
@@ -40,7 +36,7 @@ flex-wrap: wrap;
 
 nav ul li {
 font-family:Roboto;
-font-size:18px;
+font-size:24px;
 padding:0.5rem;
 flex:auto;
 text-align: center;
@@ -122,6 +118,7 @@ section.hero {
     margin-right: 10%;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-bottom: 5%;
 }
 
 h1.homepage {
@@ -129,7 +126,7 @@ font-family:Roboto;
 font-style:normal;
 font-weight:400;
 line-height:normal;
-font-size:3rem;
+font-size:48px;
 text-align:left;
 color:#262626;
 clear:both;
@@ -141,7 +138,7 @@ font-family:Roboto;
 font-style:normal;
 font-weight:300;
 line-height:normal;
-font-size:18px;
+font-size:32px;
 color:#262626;
 clear:both;
 }
@@ -164,7 +161,7 @@ align-items: center;
 font-family:Roboto;
 font-style:normal;
 font-weight:300;
-font-size:18px;
+font-size:32px;
 color:#262626;
 float:left;
 clear:both;
@@ -189,7 +186,7 @@ font-family:Roboto;
 font-style:normal;
 font-weight:400;
 line-height:normal;
-font-size:36px;
+font-size:42px;
 text-align:center;
 color:#262626;
 }
@@ -209,7 +206,7 @@ width:110%;
 }
 
 .green {
-width:70%;
+width:60%;
 height:70%;
 background:#188238;
 box-shadow:inset 0 4px 4px rgba(0,0,0,0.25);
@@ -223,7 +220,7 @@ align-items:center;
 .title-column-right {
 text-align:center;
 flex-direction:column;
-width:30%;
+width:40%;
 align-items: center;
 }
 
@@ -231,12 +228,12 @@ align-items: center;
 text-align:center;
 float:left;
 flex-direction:column;
-width:30%;
+width:40%;
 align-items:center;
 }
 
 .yellow {
-width:70%;
+width:60%;
 height: 70%;
 background:#FEDD52;
 box-shadow:inset 0 4px 4px rgba(0,0,0,0.25);
@@ -260,11 +257,11 @@ margin:50px;
 text-align:center;
 float:right;
 flex-direction:column;
-width:30%;
+width:40%;
 }
 
 .blue {
-width:70%;
+width:60%;
 height:70%;
 background:#2C4E7A;
 box-shadow:inset 0 4px 4px rgba(0,0,0,0.25);
@@ -320,7 +317,9 @@ div.my-name.p {
     margin-left: 12%;
 }
 
-
+#myBtn {
+    visibility: hidden;
+}
 
 .nav-item {
 float:right;
@@ -426,6 +425,7 @@ flex-direction:row;
 text-align:right;
 flex-wrap: nowrap;
 margin-top: 5%;
+width:100%;
 }
 
 .flex-container-ul {
@@ -661,10 +661,10 @@ width:50%;
 }
 
 footer.flex-container {
-display: flex;
 text-align: center;
-flex-direction: row;
-width: 100%;
+width: 90%;
+margin-left: 5%;
+vertical-align: middle;
 }
 
 .caseStudyBtn,.caseStudyBtn2 {
@@ -684,11 +684,11 @@ border-radius:2px;
 margin:0 auto;
 }
 
-.mytools,img.mockups {
+img.mytools,img.mockups {
 display:block;
 margin-left:auto;
 margin-right:auto;
-width:50%;
+width:30%;
 }
 
 p.project-description,p.section-description {
@@ -726,7 +726,8 @@ text-align:center;
         float:none;
       }  
     ul.flex-container {
-          display: none;
+        display: none;
+        clear:both;
               
       }  
       
@@ -734,7 +735,7 @@ text-align:center;
           float:none;
       }
       li.navigation {
-          font-size: 16px;
+          font-size: 12px;
       }
       
       div.hamburger {
@@ -743,11 +744,13 @@ text-align:center;
     section.hero  {
         flex-wrap: wrap;
         display: block;
+        clear:both;
 }
       
     h1.homepage              {
-        font-size: 32px;
+        font-size: 24px;
         padding: 0px;
+        vertical-align: middle;
     }
       
       h4 {
@@ -755,7 +758,9 @@ text-align:center;
       }
     
       img.rubiks {
-    width: 30%;
+        width: 30%;
+        text-align: center;
+    
     }
 
       div.cloudy-container {
@@ -794,8 +799,11 @@ text-align:center;
       .myTools {
           width:20%;
       }
-      
-}
+      button#myBtn {
+       visibility:inherit;  
+      }
+    }
+
 
 
 
