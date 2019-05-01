@@ -52,6 +52,7 @@ ul.flex-container {
     justify-content: space-around;
     list-style:none;
     flex-wrap: wrap;
+    padding-top: 2%;
 }
 
 ul.flex-container-footer {
@@ -663,11 +664,16 @@ border-radius:2px;
 margin:0 auto;
 }
 
+div.container-case-study {
+    
+}
 img.mockups {
 display:block;
-width:60%;
+width:80%;
 padding-top: 5%;
 padding-bottom: 5%;
+margin-left: auto;
+margin-right: auto;
 }
 
 img.mytools {
@@ -712,7 +718,6 @@ div.logo-container-about {
 img.about-hero-image {
     width:100%;
     height:50%;
-    margin-top:3%;
     margin-left: 0%;
 }
 
@@ -891,7 +896,13 @@ nav {
     flex-direction: row;
     margin-left: 4%;
     clear: both;
-        }       
+        } 
+img.mockups {
+display:block;
+width:60%;
+padding-top: 5%;
+padding-bottom: 5%;
+}
         
         
 }
