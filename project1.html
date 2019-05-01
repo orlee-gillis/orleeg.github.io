@@ -4,73 +4,14 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <title>Case Study | cloudy by Orlee Gillis</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-
-@media screen and (min-width: 601px) {
-  div.example {
-    font-size: 80px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  div.example {
-    font-size: 30px;
-  }
-}
-</style>
 <link rel="stylesheet" type="text/css" href="css/reset.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
     
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- <style>
-     
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 16px;
-  background-color: white;
-  border: 1px solid black;
-  color: black;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-}
-
-.mobile-container {
-  max-width: 480px;
-  margin: auto;
-  background-color: #555;
-  height: 500px;
-  color: white;
-  border-radius: 10px;
-}
-
-.topnav {
-  overflow: hidden;
-  position: relative;
-}
-
-
-.topnav a {
-  color: black;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: none;
-}
-
-     
-#myLinks {
-  display: none;
-}
-
-</style>    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <script src="moveStyleTags.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138259060-1"></script>
 <script>
@@ -82,16 +23,17 @@
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
+<!--
 <style>
 .mySlides {display:none}
-</style>
+</style>-->
 <body>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
-<div class="container-case-study">
+
 <nav class="flex-container">
     <div class="logo-container">
       <img src="images/logoCleared.png" class="logo" alt="og logo">
@@ -104,7 +46,7 @@
       <li class="navigation"><a href="#">Contact</a></li>
       </ul>
   </nav>
-<!-- Simulate a smartphone / tablet -->
+<!-- Simulate navbar for a smartphone / tablet -->
 
 <!-- Top Navigation Menu -->
 <div class="hamburger">
@@ -115,85 +57,72 @@
     <a href="#">About</a>
     <a href="#">Contact</a>
   </div>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
-  </a>
+    </a>
 </div>
-     
-<script>
-    function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-</script>
 
-<!-- End smartphone / tablet look -->
-</div>
-    
+ <div class="container-case-study">   
     <img src="images/mockups_joint.png" class="mockups" alt="mockups">
-
-<section class="container">
-<div class="project-overview">
-        <h1 class="project">Project Overview</h1>
-        <p class="project-description">Cloudy is a cloud storage and organization app with an emphasis on network collaboration and seamless integration.<br>
-Cloudy syncs with social networks and channels such as
-Facebook, WhatsApp, Slack and the liking. Users can store various file types, such as Google Drive files, Dropbox etc.
-Users can access items that are stored within a range of different apps, share them with multiple groups and online communities, and collaborate with their peers and colleagues in real-time.</p>
-</div>
-    <div class="grid">
-    <div class="row">
-      <div class="column">
-        <h2 class="section-subtitle">The Client's Goal</h2>
-        <p class="section-description">Identify a ‘gap’ in the cloud storage market<br>
-Identify an audience whose cloud storage needs<br>
-are lacking the ideal tool<br><br>
-Research showed that the market is lacking an app that is:<br>
-Super intuitive to use<br>
-Consistent re: navigation and branding that ‘makes sense'</p>
-      </div>
-    <div class="column">
-        <h2 class="section-subtitle">My Role</h2>
-        <p class="section-description">As the designer responsible for this client’s project, I was responsible for bringing life into this client’s product idea.<br><br>
-        
-Through rigorous competitor research and user surveying, I came up with cloudy, a cloud storage and organization app.</p>
-          </div>
+     <section class="container">
+         <div class="project-overview">
+            <h1 class="project">Project Overview</h1>
+            <p class="project-description">cloudy is a cloud storage and organization app with an emphasis on network collaboration and seamless integration.<br>cloudy syncs with social networks and channels such as Facebook, WhatsApp, Slack and the liking. Users can store various file types, such as Google Drive files, Dropbox etc.Users can access items that are stored within a range of different apps, share them with multiple groups and online communities, and collaborate with their peers and colleagues in real-time.</p>
+         </div>
+        <div class="grid">
+            <div class="row">
+            <div class="column">
+            <h2 class="section-subtitle">The Client's Goal</h2>
+            <p class="section-description">Identify a ‘gap’ in the cloud storage market<br>Identify an audience who lacks a cloud storage tool that <br>meets their needs<br><br>Research showed that the market is lacking an app that is:<br>Super intuitive to use<br>Consistent re: navigation and branding that ‘makes sense'</p>
             </div>
-        <div class="row">
-      <div class="column">
-        <h2 class="section-subtitle">Problem</h2>
-        <h4 class="project-page">The pain points at hand</h4>
-        <p class="section-description">Users in their 20s and 30s are longing for a space<br>
-where they can organize and store files and collaborate seamlessly with their various social<br> channels.<br><br>
-
-Between Facebook Groups, WhatsApp groups,
-Slack channels and email lists,
-there are many files to be shared
-and ideas to brainstorm with eachother.<br><br>
-
-Sometimes a real-time whiteboard session is called<br> for, and generous storage space would make a big difference.<br><br>
-Sometimes a real-time whiteboard session is called<br> for, and generous storage space would make a big difference.</p>
-      </div>
-      <div class="column">
-        <h2 class="section-subtitle">Solution</h2>
-        <h4 class="project-page">The value proposition</h4>
-        <p class="section-description">“Leveraging the "network effect" to generate growth.<br><br>
-
-Users will share items they've created and/or <br> collected with their friends
-and that will make their friends want to use our service too.”<br><br>
-            
-
-This product will answer the specific <br>organization,storage needs and pain points --<br>
-as voiced directly by a well-defined target audience.<br><br>
-Therefore, the cloud storage app will appeal to its prospective users and to their like-minded networks and communities.</p>
-      </div>
+            <div class="column">
+            <h2 class="section-subtitle">My Role</h2>
+            <p class="section-description">As the designer responsible for this client’s project, I was responsible for bringing life into this client’s product idea.<br><br><br>Through rigorous competitor research and user surveying,<br> I came up with cloudy, a cloud storage and organization app.</p>
+            </div>
+            </div>
+            <div class="row">
+            <div class="column">
+            <h2 class="section-subtitle">Problem</h2>
+            <h4 class="project-page">The pain points at hand</h4>
+            <p class="section-description">Users in their 20s and 30s are longing for a space<br>where they can organize and store files and collaborate seamlessly with their various social<br> channels.<br><br>Between Facebook Groups, WhatsApp groups,Slack channels and email lists,there are many files to share and ideas to brainstorm with eachother.<br><br>Sometimes a real-time whiteboard session is called<br> for, and generous storage space would make a big difference.<br><br>Sometimes a real-time whiteboard session is called<br>for, and generous storage space would make a big difference.</p>
+            </div>
+            <div class="column">
+            <h2 class="section-subtitle">Solution</h2>
+            <h4 class="project-page">The value proposition</h4>
+            <p class="section-description">“Leveraging the "network effect" to generate growth.<br><br>Users will share items they've created and/or <br> collected with their friends and that will make their friends want to use our service too.”<br><br>This product will answer the specific <br>organization,storage needs and pain points --<br>as voiced directly by a well-defined target audience.<br><br>Therefore, the cloud storage app will appeal to its prospective users and to their like-minded networks and communities.</p>
+            </div>
             </div>
         </div>
   <h1 class="project">Process</h1>
-    <div class="visual"><img src="images/process_visual.png" class="visual" alt="visual"></div>
+
+    <div class="flex-container-process">
+  <ul class="flex-container-0A2043">
+    <li class="flex-item-title">Familiarize</li>
+    <li class="flex-item">Competetive Analysis</li>
+  </ul>
+  <ul class="flex-container-39517E">
+    <li class="flex-item-title">Empathize</li>
+    <li class="flex-item">User Surveys</li>
+    <li class="flex-item">User Personas</li>
+    <li class="flex-item">User Stories</li>
+  </ul>
+  <ul class="flex-container-4C5DAA">
+    <li class="flex-item-title">Visualize</li>
+    <li class="flex-item">User Flows</li>
+    <li class="flex-item">Sitemap</li>
+    <li class="flex-item">Wireframes</li>
+    <li class="flex-item">Usability Testing</li>
+  </ul>
+  <ul class="flex-container-0D258C">
+    <li class="flex-item-title">Actualize</li>
+    <li class="flex-item">Branding</li>
+  </ul>
+  <ul class="flex-container-1D5DCC">
+    <li class="flex-item-title">Optimize</li>
+    <li class="flex-item">Preference Testing</li>
+    <li class="flex-item">Conclusion</li>
+  </ul>
+</div>
      
       <div class="companalysis">
           <h2 class="section-subtitle">Competitive Analysis</h2>
@@ -203,6 +132,7 @@ Therefore, the cloud storage app will appeal to its prospective users and to the
                             What could we do better?
                         </p>
     </div>
+    <div class="toggles">
 <p class="toggles">
   <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Asana</a>
   <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2">Evernote</a>
@@ -221,7 +151,7 @@ Therefore, the cloud storage app will appeal to its prospective users and to the
       <img src="images/getpocket.png" class="img-fluid" alt="Responsive image">
     </div>
 </div>
-
+</div>
 
     <div class="swot">
         <ul class="flex-container-project">
@@ -324,7 +254,7 @@ Therefore, the cloud storage app will appeal to its prospective users and to the
 	<li class="persona-li">Overwhelming workload, adjustments to college life, academic decision-making, resource management, personal and academic organization, paying off student loans</li>
 	<li class="subtitle">Software Stack</li>
 	<li class="persona-li">Dropbox, Evernote, Google Drive, InVision, Adobe Creative Suite, Instagram, WhatsApp, Clear, Scribd, Chegg, Viber, Mint.com</li>
-	<li class="subtitle">Cloudy use-case</li>
+	<li class="subtitle">cloudy use-case</li>
 	<li class="persona-li">Backing up a variety of file types (e.g. Illustrator files and Dropbox Paper docs) and choosing whether to share them with WhatsApp groups, Facebook Groups, or both
 If necessary, she can upload her design mockups onto InVision, and share them with her project group on cloudy, so they can have a live whiteboard session when they need to collaborate, yet keep the files updated and synced on InVision</li>
 	</ul>
@@ -372,7 +302,7 @@ If necessary, she can upload her design mockups onto InVision, and share them wi
 	<li class="persona-li">Disorganized staff/professors, university politics, low departmental budget, demanding/inexperienced students</li>
 	<li class="subtitle">Software Stack</li>
 	<li class="persona-li">Google Drive, Dropbox, Evernote, Slack, Edmodo, Inkling, TED-Ed, Doceri, eBackpack</li>
-	<li class="subtitle">Cloudy use-case</li>
+	<li class="subtitle">cloudy use-case</li>
 	<li class="persona-li">Between teaching students, faculty<br>management,  budget management, her Google Sheets files, useful Ted-ED links that enhance curriculum development, faculty Slack channels etc. -- Paula’s storage needs can get overwhelming. Paula uses cloudy to send her different networks of colleagues and students the right file type in the right time, within the right interface. And manages to stay organized while she’s at it</li>
 	</ul>
 	</div>                                                
@@ -396,9 +326,9 @@ If necessary, she can upload her design mockups onto InVision, and share them wi
 <p class="section-description">From their very first ‘meeting’, cloudy needs to assure users<br> that what they need to do is easy, intuitive and not confusing in any way. 
 Not only did our user stories need to be as sharp<br>and definitive as possible, we couldn’t put our pencils down until<br>the user flows were as fool-proof as possible.</p>
 </div>
-<div class="flows">
+<div class="flex-container-flows">
 	<h2 class="section-subtitle">User Flows</h2>
-	<div class="container">
+	<div class="flows">
 	<div class="hand"><img src="images/userFlow.png" class="userflow" alt="userflow"></div>
 <div class="graphic"><img src="images/sign_up.png" class="signup" alt="userflow"></div>
 	</div>
@@ -424,14 +354,15 @@ which helped identify areas we needed to write content for.</p>
 </p>
 <div class="row">
  <div class="col">
-    <div class="collapse multi-collapse" id="multiCollapseExample1">
+    <div class="collapse multi-collapse" id="multiCollapseExample4">
       <img src="images/Dashboard_lofi.png" class="img-fluid" alt="Responsive image">
     </div>
   </div> 
-    <div class="collapse multi-collapse" id="multiCollapseExample2">
+    <div class="collapse multi-collapse" id="multiCollapseExample5">
       <img src="images/doc_editor_lofi.png" class="img-fluid" alt="Responsive image">
     </div>
 </div>
+    
 
 
 <div class="usertesting">
@@ -493,21 +424,21 @@ At first I liked the idea of an umbrella to represent an ‘all-encompassing’ 
 Typography<br>
 While Lato looked nice and straightforward, similar to the style of Roboto, Lato seemed too ‘stickler’<br> and formal. Roboto is the typeface used in Google Material Design, and therefore a familiar, intuitive<br>choice.<br><br>
 
-Aesthetically, it has a less overwhelming and dominant presence on the screen.</p>
+Aesthetically, it has a less overwhelming and dominant presence on the screen.</p><br>
 
 <p class="toggles">
   <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Color Palette</a>
   <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2">Style Guide</a>
 </p>
 <div class="row">
-    <div class="collapse multi-collapse" id="multiCollapseExample1">
+    <div class="collapse multi-collapse" id="multiCollapseExample6">
       <img src="images/colorPalette.png" class="img-fluid" alt="Responsive image">
     </div>
-    <div class="collapse multi-collapse" id="multiCollapseExample2">
+    <div class="collapse multi-collapse" id="multiCollapseExample7">
       <img src="images/styleguide.png" class="img-fluid" alt="Responsive image">
     </div>
 </div>
-
+    </div>
 
 
 
@@ -518,15 +449,15 @@ Aesthetically, it has a less overwhelming and dominant presence on the screen.</
   <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2">Doc Editor</a>
 </p>
 <div class="row">
-    <div class="collapse multi-collapse" id="multiCollapseExample1">
+    <div class="collapse multi-collapse" id="multiCollapseExample8">
       <img src="images/dashboardOld.png" class="img-fluid" alt="Responsive image">
     </div>
-    <div class="collapse multi-collapse" id="multiCollapseExample2">
+    <div class="collapse multi-collapse" id="multiCollapseExample9">
       <img src="images/docEditorOld.png" class="img-fluid" alt="Responsive image">
     </div>
 </div>
     </div>
-
+         </div>
 <div class="usertesting">
 <h2 class="section-subtitle">User Testing</h2>
 <h4 class="project-page">Changes based on user input</h4>
@@ -554,10 +485,10 @@ Aesthetically, it has a less overwhelming and dominant presence on the screen.</
   <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2">Moodboard</a>
 </p>
 <div class="row">
-    <div class="collapse multi-collapse" id="multiCollapseExample1">
+    <div class="collapse multi-collapse" id="multiCollapseExample10">
       <img src="images/mindmap.png" class="img-fluid" alt="Responsive image">
     </div>
-    <div class="collapse multi-collapse" id="multiCollapseExample2">
+    <div class="collapse multi-collapse" id="multiCollapseExample11">
       <img src="images/Moodboard.png" class="img-fluid" alt="Responsive image">
     </div>
 </div>
@@ -574,10 +505,10 @@ Aesthetically, it has a less overwhelming and dominant presence on the screen.</
   <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2">Doc Editor: I</a>
 </p>
 <div class="row">
-    <div class="collapse multi-collapse" id="multiCollapseExample1">
+    <div class="collapse multi-collapse" id="multiCollapseExample12">
       <img src="images/dashboardOld.png" class="img-fluid" alt="Responsive image">
     </div>
-    <div class="collapse multi-collapse" id="multiCollapseExample2">
+    <div class="collapse multi-collapse" id="multiCollapseExample13">
       <img src="images/docEditorOld.png" class="img-fluid" alt="Responsive image">
     </div>
 </div>
@@ -603,10 +534,10 @@ We turned to real users to tell us:</p>
   <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2">Doc Editor: II</a>
 </p>
 <div class="row">
-    <div class="collapse multi-collapse" id="multiCollapseExample1">
+    <div class="collapse multi-collapse" id="multiCollapseExample14">
       <img src="images/dashboardVersion2.png" class="img-fluid" alt="Responsive image">
     </div>
-    <div class="collapse multi-collapse" id="multiCollapseExample2">
+    <div class="collapse multi-collapse" id="multiCollapseExample15">
       <img src="images/docEditorVersion2png.png" class="img-fluid" alt="Responsive image">
     </div>
 </div>
@@ -631,6 +562,8 @@ My first time designing a full fledged product, I saw that the more difficult de
 It was also interesting to aim to find a middle ground between creating similar interfaces to what your<br> target audience is used to interacting with, yet within that constraint, finding a way to differentiate the<br> design both visually and functionally.</p>
 </div>   
     </section>
+    </div>
+         <button onclick="topFunction()" id="myBtn" title="Go to top">Top of page</button>
  <footer class="flex-container">
         <div class="my-name">
         <p>© Orlee Gillis 2018. All Rights Reserved.</p>
@@ -643,7 +576,20 @@ It was also interesting to aim to find a middle ground between creating similar 
             <li class="nav-item"><a href="#">Contact</a></li>
           </ul>
     </div>
+     <div class="hamburger">
+  <a href="#home" class="active"></a>
+  <div id="myLinks1" class="myLinks">
+    <a href="#">Work</a>
+    <a href="#">Writing</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 </footer>
+         
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138259060-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
