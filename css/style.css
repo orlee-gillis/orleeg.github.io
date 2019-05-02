@@ -593,7 +593,8 @@ flex-direction:row;
 }
 
 div.persona {
-margin-left:35%;
+margin-left: auto;
+margin-right: auto;
 width:33%;
 }
 
@@ -857,6 +858,7 @@ img.about-hero-image {
     width:100%;
     height:50%;
     margin-left: 0%;
+    margin-top: 3%;
 }
 
 p {
@@ -975,16 +977,6 @@ h4 {
     font-size: 18px;
         }
 
-/*nav.flex-container {
-        margin-left: 0%;
-        padding-left: 0%;
-        display:flex;
-        flex-direction: column;
-        clear: both;
-        padding-bottom:0%;
-    
-    }*/
-    
 ul.flex-container {
         flex-direction: column;   
     }
@@ -1103,9 +1095,8 @@ padding:10px;
 
      
         
-div.myLinks {
+div#myLinks.myLinks {
             display:none;
-            visibility:hidden;
         }       
         
 div.grid {
@@ -1133,17 +1124,16 @@ div.grid {
 div.flex-container.user-personas {
     display: flex;
     clear: both;
-    flex-direction: column;
     flex-wrap: wrap;
     text-align: left;
     justify-content: center;
     width: 90%;
 }
         
-        div.flex-container.persona-container {
+div.flex-container.persona-container {
         display: flex;
         clear: both;
-        flex-direction: column;
+        flex-direction: row;
         width: 100%;
         text-align: left;
         padding-top: 2%;
