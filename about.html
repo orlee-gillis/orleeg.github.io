@@ -8,66 +8,7 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- <style>
-     
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 16px;
-  background-color: white;
-  border: 1px solid black;
-  outline: 
-  color: black;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-}
-
-.mobile-container {
-  max-width: 480px;
-  margin: auto;
-  background-color: #555;
-  height: 500px;
-  color: white;
-  border-radius: 10px;
-}
-
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-  position: relative;
-}
-
-
-.topnav a {
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
-
-.topnav a.icon {
-  background: black;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-     
-#myLinks {
-  display: none;
-}
-
-</style>    
+ 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138259060-1"></script>
 <script>
@@ -80,35 +21,20 @@
   </head>
     <!--Body-->
  <body>
-<nav class="flex-container">
+  <nav class="flex-container">
     <div class="logo-container">
       <img src="images/logoCleared.png" class="logo" alt="og logo">
     </div>
+
+   
+
 <ul class="flex-container">
   <li class="navigation"><a href="#">Work</a></li>
   <li class="navigation"><a href="#">Writing</a></li>
   <li class="navigation"><a href="#">About</a></li>
   <li class="navigation"><a href="#">Contact</a></li>
   </ul>
-</nav>
-<!-- Simulate a smartphone / tablet -->
-
-<!-- Top Navigation Menu -->
-<div class="hamburger">
-  <a href="#home" class="active"></a>
-  <div id="myLinks" class="myLinks">
-    <a href="#">Work</a>
-    <a href="#">Writing</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-  </div>
-
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
-
-<!-- End smartphone / tablet look -->
+ </nav>
 
 <img src="images/hero_image_about.png" class="about-hero-image">
 <div class="container">    
@@ -137,52 +63,24 @@
 
         Keep the user with you, please. Talk to him, guide him, empower him with all your brand has to offer, so that he knows his way around. And likes being there. </p>
     </div>
-     <button onclick="topFunction()" id="myBtn" title="Go to top">Top of page</button>
-    <footer class="flex-container">
-    <nav class="flex-container">
-    <div class="my-name"><p>© Orlee Gillis 2018</p></div>
-
-    <ul class="flex-container">
-      <li class="navigation"><a href="#">Work</a></li>
-      <li class="navigation"><a href="#">Writing</a></li>
-      <li class="navigation"><a href="#">About</a></li>
-      <li class="navigation"><a href="#">Contact</a></li>
-      </ul>
-
-<!-- Top Navigation Menu -->
-
-    
-<!-- Simulate a smartphone / tablet -->
-
-<!-- Top Navigation Menu -->
-<div class="hamburger">
-  <a href="#home" class="active"></a>
-  <div id="myLinks" class="myLinks">
-    <a href="#">Work</a>
-    <a href="#">Writing</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-  </div>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
-  </nav>
-<!-- End smartphone / tablet look -->
+<footer class="flex-container">
+     
 
 
-<script>
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-</script>
+  <nav class="flex-container-footer">
+<div class="my-name">
+        <p>© Orlee Gillis 2018</p>
+        </div>
+
+<ul class="flex-container-footer">
+  <li class="navigation-footer"><a href="#">Work</a></li>
+  <li class="navigation-footer"><a href="#">Writing</a></li>
+  <li class="navigation-footer"><a href="#">About</a></li>
+  <li class="navigation-footer"><a href="#">Contact</a></li>
+  </ul>
+    </nav>
+
 </footer>
-<!-- Top Navigation Menu -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138259060-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];

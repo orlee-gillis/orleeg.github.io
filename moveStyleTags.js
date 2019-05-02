@@ -1,4 +1,3 @@
-
 function myFunction() {
     var x = document.getElementById("myLinks");
     if (x.style.display === "block") {
@@ -28,12 +27,12 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-$('.image').click( function(event)) {
+$('.image').click( function(event) {
  $(this).show();
 $('.image2').hide();
 $('.image3').hide();
                   });
-$('.image2').click( function(event)) {
+$('.image2').click( function(event) {
   $('.image1').show();
 $(this).hide();
 $('.image3').hide();
