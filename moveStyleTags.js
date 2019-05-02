@@ -1,5 +1,4 @@
 
-
 function myFunction() {
     var x = document.getElementById("myLinks");
     if (x.style.display === "block") {
@@ -10,10 +9,6 @@ function myFunction() {
     else {
     x.style.display = "block";
   }
-}
-
-.mySlides {
-    display:none;
 }
 
 // When the user scrolls down 20px from the top of the document, show the button
@@ -31,16 +26,16 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
-};
+}
 
 $('.image').click( function(event)) {
  $(this).show();
-$(image2).hide();
-$(image3).hide();
+$('.image2').hide();
+$('.image3').hide();
                   });
 $('.image2').click( function(event)) {
-  $(.image1).show();
+  $('.image1').show();
 $(this).hide();
-$(image3).hide();
+$('.image3').hide();
 
 });

@@ -430,6 +430,10 @@ div.toggles {
     margin-right: auto;
 }
 
+.btn-primary {
+    font-family: roboto;
+}
+
 div#multiCollapseExample3.multi-collapse.collapse.show {
     margin-left: auto;
     margin-right: auto;
@@ -865,10 +869,6 @@ p {
     font-size: 16px;
 }
 
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
       
       h2 {
           font-size:28px;
@@ -967,10 +967,10 @@ margin: 0 auto;
       }
     }
 
-Smartphones (portrait and landscape) -----------
+<!-- Smartphones (portrait and landscape) ----------->
 @media only screen 
-    and (min-device-width : 768px) 
-    and (max-device-width : 1024px) 
+    and (min-width : 768px) 
+    and (max-width : 1024px) 
     and (-webkit-min-device-pixel-ratio: 1) {
         
 h4 {   
