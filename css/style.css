@@ -15,7 +15,6 @@ body {
   width: 100%;
   max-width: 1024px; /* or whatever max value you prefer */
   margin: 0 auto;
-  border: 3px solid red;
 }
 
 nav.flex-container {
@@ -48,9 +47,22 @@ nav.flex-container ul{
 ul.flex-container {
     flex-direction: column;
     margin: auto;
-    padding-top:5%;
+  }
+
+footer.flex-container-footer {
+    display: flex;
+
+}
+nav.flex-container-footer {
+    align-items: center;
 
   }
+ul.flex-container-footer {
+    flex-direction: column;
+    margin-left: 50%;
+    margin-top: 2%;
+    text-align: right;
+}
 
 ul.flex-container-nav {
   font-family:Roboto;
@@ -147,6 +159,7 @@ h4 {
   clear:both;
   margin-top: 0;
   margin-bottom: 0;
+  padding-top:2%;
 
 }
 
@@ -848,6 +861,7 @@ img.about-hero-image {
 p {
   font-size: 16px;
   margin-bottom: 0%;
+  margin-top:0px;
 }
 
 
@@ -912,13 +926,6 @@ button#myBtn {
     font-size: 18px;
   }
 
-  ul.flex-container-nav {
-
-  }
-  li.navigation {
-    flex-direction: column;
-
-  }
 
   div.container {
     padding-top:30px;
@@ -1146,4 +1153,29 @@ ul.flex-container {
     width:100%;
     flex-direction: row;
   }
+
+  nav.flex-container-footer {
+    align-items: center;
+
+  }
+
+  ul.flex-container-footer{
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-end;
+    padding-top: 0%;
+    margin-top: 0 px;
+    margin-bottom: 0 px;
+    margin-left: 0 px;
+    margin-right:2%;
+
+    width: 60%;
+
+
+  }
+  li.navigation {
+    flex-direction: column;
+    margin: 1%;
+    }
+
 }
