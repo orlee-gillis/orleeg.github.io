@@ -49,19 +49,9 @@ ul.flex-container {
     margin: auto;
   }
 
-footer.flex-container-footer {
-    display: flex;
-
-}
-nav.flex-container-footer {
-    align-items: center;
-
-  }
 ul.flex-container-footer {
     flex-direction: column;
-    margin-left: 50%;
     margin-top: 2%;
-    text-align: right;
 }
 
 ul.flex-container-nav {
@@ -157,8 +147,8 @@ h4 {
   font-size:22px;
   color:black;
   clear:both;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 40px;
+  margin-bottom: 10px;
   padding-top:2%;
 
 }
@@ -231,7 +221,6 @@ h2 {
 .title-column-right {
   text-align:center;
   flex-direction:column;
-  width:40%;
   align-items: center;
 }
 
@@ -268,7 +257,6 @@ h2 {
   text-align:center;
   float:right;
   flex-direction:column;
-  width:40%;
 }
 
 .blue {
@@ -313,15 +301,10 @@ footer.flex-container {
   display:inline-flex;
   margin-right:40px;
 }
-nav.flex-container-footer {
-  display: flex;
-  align-items: center;
 
-}
 div.my-name {
   font-size:16px;
   flex-wrap: nowrap;
-  width: 30%;
 }
 
 div.my-name.p {
@@ -419,9 +402,6 @@ h1.project {
 div.grid {
 }
 
-div.row {
-  flex-wrap:nowrap;
-}
 
 div.toggles {
   margin-left: auto;
@@ -691,8 +671,9 @@ img.signup {
 }
 
 img.userflow {
-  width:600px;
-  height:600px;
+  width:100%;
+  height:auto;
+  max-width:600px;
 }
 
 div.grahpic {
@@ -923,16 +904,13 @@ button#myBtn {
 
 
   h4 {
-    font-size: 18px;
+    font-size: 22px;
   }
 
 
   div.container {
     padding-top:30px;
-    width:90%;
     padding-bottom:30px;
-    margin-right: 10%;
-    margin-left: 8%;
     height: 100%;
   }
 
@@ -1028,6 +1006,10 @@ ul.flex-container {
     border-radius: 10px;
   }
 
+
+  div.row {
+    flex-wrap:nowrap;
+  }
   .topnav {
     overflow: hidden;
     position: relative;
@@ -1089,7 +1071,7 @@ ul.flex-container {
     margin-left: 4%;
     margin-bottom:4%;
     align-items:center;
-    width:23%;
+    width:29%;
   }
 
   div.flex-container.persona-bio {
@@ -1162,14 +1144,11 @@ ul.flex-container {
   ul.flex-container-footer{
     display: flex;
     flex-direction:row;
-    justify-content: flex-end;
+    justify-content: center;
     padding-top: 0%;
     margin-top: 0 px;
     margin-bottom: 0 px;
     margin-left: 0 px;
-    margin-right:2%;
-
-    width: 60%;
 
 
   }
