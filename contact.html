@@ -39,20 +39,21 @@
 
     <img src="images/paper-plane.jpg" class="contact-hero-image" alt="paper airplane">
     <div class="container">
-      <h1 class="homepage">I look forward to hearing from you!</h1>
-      <div class="container">
-      <form action="https://formspree.io/orlee.gillis@gmail.com" method="POST">
-        <p>
-        <label for="first_name">Your name</label>
-        <input type="text" name="name">
-        </p>
-        <p>
-          <label for="text">Message</label>
-        <input type="email" name="_replyto">
-        <input type="submit" value="Send">
-      </form>
+      <form action="https://formspree.io/orlee.gillis@gmail.com" method="POST" />
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Email</label>
+    <input type="text" id="email" name="lastname" placeholder="Your email address">
+
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Send">
+
 </div>
-          </div>
           <footer class="flex-container">
 
             <nav class="flex-container-footer">
