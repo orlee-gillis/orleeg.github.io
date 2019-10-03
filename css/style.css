@@ -34,7 +34,7 @@ div.logo-container {
 
 }
 
-nav .flex-container li{
+nav.flex-container li{
   display: block;
   margin-bottom:5px;
 
@@ -111,7 +111,9 @@ section.main {
   margin-bottom: 5%;
 }
 
-
+p.section-description.title {
+  font-weight:900;
+}
 
 
 /* index.html*/
@@ -413,11 +415,15 @@ div.toggles {
 
 .btn-primary {
   font-family: roboto;
-  margin:2%;
+
 }
 
 a.btn.btn-primary.collapsed {
   margin: 5%;
+}
+
+a.btn.btn-primary {
+  margin: 2%;
 }
 
 div#multiCollapseExample3.multi-collapse.collapse.show {
