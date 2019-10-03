@@ -848,6 +848,13 @@ p.toggles {
   text-align:center;
 }
 
+/*contact page*/
+img.contact-hero-image {
+  height:50%;
+  margin-left:0%;
+  margin-top:3%;
+}
+
 /*about me page*/
 
 
