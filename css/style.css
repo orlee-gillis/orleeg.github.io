@@ -136,7 +136,7 @@ h3 {
   font-size:28px;
   text-align:left;
   font-family:nunito;
-  padding-top: 3%;
+  padding-top: 5%;
 }
 
 h4 {
@@ -794,14 +794,18 @@ img.mytools {
   margin-right: auto;
   margin-top: 2%;
 }
-p.project-description,p.section-description {
+p.project-description {
   font-family:Roboto;
   font-style:normal;
   font-weight:100;
   font-size:16px;
   line-height:27px;
-  margin-bottom: 1%;
+  margin-bottom: 3%;
   margin-top:0.5%;
+}
+
+p.section-description-title {
+  font-style:oblique;
 }
 
 p.section-description-input {
