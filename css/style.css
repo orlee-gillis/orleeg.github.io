@@ -97,6 +97,7 @@ a {
   text-decoration: none;
   color:#155DCD;
   font-weight:300px;
+  margin:3%;
 
 }
 
@@ -890,7 +891,7 @@ img.cloudy {
 
 
 
-div.caseStudyBtn,.caseStudyBtn2,.caseStudyBtn3,.caseStudyBtn4 {
+div.caseStudy,.caseStudyBtn2,.caseStudyBtn3,.caseStudyBtn4 {
 
 }
 div.project {
