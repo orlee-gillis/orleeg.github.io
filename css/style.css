@@ -856,7 +856,10 @@ img.contact-hero-image {
 }
 
 div.container-contact {
-  vertical-align: middle;
+  width:12%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 /*about me page*/
