@@ -163,6 +163,7 @@ div.project {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  width: 120%;
 
 }
 
@@ -269,6 +270,7 @@ h2 {
   float:left;
   align-items:center;
   margin-top: 5%;
+  margin-bottom: 5%:
 }
 
 .orderIt {
@@ -879,6 +881,7 @@ div.caseStudyBtn,.caseStudyBtn2,.caseStudyBtn3,.caseStudyBtn4 {
 }
 div.project {
   flex-direction: column;
+  width: 120%;
 }
 div.green,.blue {
   background: none;
