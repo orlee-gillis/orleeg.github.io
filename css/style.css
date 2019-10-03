@@ -412,6 +412,7 @@ div.toggles {
 
 .btn-primary {
   font-family: roboto;
+  margin:2%;
 }
 
 a.btn.btn-primary.collapsed {
@@ -809,7 +810,7 @@ p.project-description {
 }
 
 p.section-description-title {
-  font-style:oblique;
+  font-weight:900;
 }
 
 p.section-description-input {
