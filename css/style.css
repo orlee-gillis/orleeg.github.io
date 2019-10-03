@@ -414,6 +414,10 @@ div.toggles {
   font-family: roboto;
 }
 
+a.btn.btn-primary.collapsed {
+  margin: 5%;
+}
+
 div#multiCollapseExample3.multi-collapse.collapse.show {
   margin-left: auto;
   margin-right: auto;
@@ -819,7 +823,8 @@ ul.research {
 }
 
 .space {
-  padding-top:1%;
+  padding-top:2%;
+  padding-bottom: 2%;
 }
 
 
@@ -849,6 +854,10 @@ p {
   font-size: 16px;
   margin-bottom: 0%;
   margin-top:0px;
+}
+
+p.section-description.title {
+  font-weight:900;
 }
 
 
