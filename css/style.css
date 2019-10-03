@@ -855,7 +855,7 @@ img.contact-hero-image {
   margin-top:3%;
 }
 
-div.container-contact {
+form {
   width:12%;
   margin: auto;
   display: flex;
