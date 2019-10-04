@@ -880,6 +880,15 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-family: sans-serif: Roboto;
+  font-size:18px;
+  display:flex
+  font-size: 18px;
+  text-align: center;
+  display: flex;
+  width: 305px;
+
+}
 }
 /*about me page*/
 
