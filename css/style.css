@@ -887,6 +887,7 @@ input[type=submit] {
   justify-content: center;
   display: flex;
   width: 305px;
+  flex-direction: row;
 
 }
 }
