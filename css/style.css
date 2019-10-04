@@ -884,7 +884,7 @@ input[type=submit] {
   font-size:18px;
   display:flex
   font-size: 18px;
-  text-align: center;
+  justify-content: center;
   display: flex;
   width: 305px;
 
