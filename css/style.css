@@ -851,6 +851,8 @@ p.toggles {
 /*contact page*/
 img.contact-hero-image {
   margin-top: 3%;
+  width: 1440px;
+  height: 432px;
 }
 
 h1.contact {
