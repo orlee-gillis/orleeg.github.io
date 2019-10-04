@@ -853,6 +853,17 @@ img.contact-hero-image {
   margin-top: 3%;
 }
 
+h1.contact {
+  font-family:Roboto;
+  font-style:normal;
+  font-weight:400;
+  line-height:normal;
+  font-size:36px;
+  text-align:left;
+  color:#262626;
+  clear:both;
+}
+
 form {
   width:30%;
   margin: auto;
